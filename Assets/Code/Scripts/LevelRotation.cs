@@ -5,6 +5,7 @@ public class LevelRotation : MonoBehaviour
     [SerializeField] private GameObject playerController;
     [SerializeField] private GameObject cameraController;
     [SerializeField] private int animationDuration;
+    [SerializeField] private float GravityScale;
     private CharacterController0_1 characterController;
     private Rigidbody2D characterRigidbody;
     private bool startTransitionUP = true;
@@ -28,7 +29,7 @@ public class LevelRotation : MonoBehaviour
     {
         if(characterController.stateCameraRotation == 1)
         {
-            characterRigidbody.gravityScale = 1f;
+            characterRigidbody.gravityScale = GravityScale;
             playerController.transform.eulerAngles = new Vector3(0,0,0);
             //cameraController.transform.eulerAngles = new Vector3(0,0,0);
             startTransitionUP = true;
@@ -60,7 +61,7 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 3)
         {
-            characterRigidbody.gravityScale = -1f;
+            characterRigidbody.gravityScale = -GravityScale;
             playerController.transform.eulerAngles = new Vector3(0, 0, 180f);
             //cameraController.transform.eulerAngles = new Vector3(0, 0, 180f);
             startTransitionDOWN = true;
