@@ -3664,8 +3664,9 @@ GameObject:
   - component: {fileID: 1638540358}
   - component: {fileID: 1638540357}
   - component: {fileID: 1638540356}
-  - component: {fileID: 1638540355}
   - component: {fileID: 1638540360}
+  - component: {fileID: 1638540362}
+  - component: {fileID: 1638540361}
   m_Layer: 0
   m_Name: Perso-1_40
   m_TagString: Player
@@ -3673,25 +3674,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1638540355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638540354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dc589ace5d16d7448429f5fe0f56d35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpForce: 5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCollider: {fileID: 166417179}
-  sceneBackground: {fileID: 1642757152}
 --- !u!70 &1638540356
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3864,6 +3846,41 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -3.85}
   m_Size: {x: 4, y: 1.86}
   m_Direction: 1
+--- !u!114 &1638540361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638540354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa7ee806db71d34cb136cd26daddf58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 1638540354}
+  cameraController: {fileID: 519420028}
+  animationDuration: 2000
+--- !u!114 &1638540362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638540354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc162ad8f73d2084ca1a9865b696749b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  jumpForce: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCollider: {fileID: 166417179}
+  sceneBackground: {fileID: 1642757152}
+  stateCameraRotation: 1
 --- !u!1 &1642757152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,7 +3891,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1642757154}
   - component: {fileID: 1642757153}
-  - component: {fileID: 1642757155}
   m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
@@ -3910,28 +3926,6 @@ Transform:
   - {fileID: 166417176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1642757155
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642757152}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 83afe84b1bfdb96438b60933ed343a48, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,25 +1,26 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
-public class CharacterController : MonoBehaviour
+public class CharacterController0_1 : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Collider2D groundCollider;
+   // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
-    private Animator sceneAnimationController;
-
-    private bool isUP = false;
+    public int stateCameraRotation = 1;
 
     private Rigidbody2D rb;
     //Animator charachterAnimator;
     SpriteRenderer spriteRenderer;
 
     private InputAction moveAction; //Bien indiquer le nom de la fonction pour plus tard
-
+    
     private InputAction jumpAction;
 
     private InputAction interactionAction;
@@ -36,7 +37,6 @@ public class CharacterController : MonoBehaviour
         interactionAction = InputSystem.actions.FindAction("Interact");
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-        sceneAnimationController = sceneBackground.GetComponent<Animator>();
 
     }
 
@@ -51,32 +51,53 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 move = moveAction.ReadValue<Vector2>(); 
-        rb.linearVelocityX = move.x * moveSpeed;
-
-        if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
-        {
-            rb.AddForceY(jumpForce * 100);
-            nbJumpsLeft--;
-        }
+        //Debug.Log("stateCameraRotation : " + stateCameraRotation);
+        
 
         //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
         //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
         //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
         spriteRenderer.flipX = rb.linearVelocityX < 0;
-
+        Debug.Log("stateCameraRotation : " + stateCameraRotation);
         if(interactionAction.WasPressedThisFrame())
         {
-            if (!isUP)
+            if (stateCameraRotation == 1)
             {
-                sceneAnimationController.SetTrigger("transionUP");
-                isUP = true;
+                stateCameraRotation = 2;
+                //horizontal = -horizontal;
             }
-            else
+            else if(stateCameraRotation == 3) 
             {
-                sceneAnimationController.SetTrigger("transitionDown");
-                isUP = false;
+                stateCameraRotation = 2;
             }
         }
+        if (stateCameraRotation == 3)
+        {
+            MoveCharacter(-1);
+            JumpCharacter(-1);
+        } else
+        {
+            MoveCharacter(1);
+            JumpCharacter(1);
+        }
+    }
+
+    private void JumpCharacter(int jumpDir)
+    {
+      //  Debug.Log("nbJumpsLeft : " + nbJumpsLeft);
+        
+
+        if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
+        {
+            //Debug.Log("jumpAction : " + jumpDir * jumpForce * 100);
+            rb.AddForceY(jumpDir * jumpForce * 100);
+            nbJumpsLeft--;
+        }
+    }
+
+    private void MoveCharacter(int moveDir)
+    {
+        Vector2 move = moveAction.ReadValue<Vector2>();
+        rb.linearVelocityX = moveDir * move.x * moveSpeed;
     }
 }
