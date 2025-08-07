@@ -51,15 +51,15 @@ public class CharacterController0_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("stateCameraRotation : " + stateCameraRotation);
-        
+
 
         //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
         //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
         //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
-        spriteRenderer.flipX = rb.linearVelocityX < 0;
-        Debug.Log("stateCameraRotation : " + stateCameraRotation);
-        if(interactionAction.WasPressedThisFrame())
+
+
+            //spriteRenderer.flipX = rb.linearVelocityX < -0.1;
+        if (interactionAction.WasPressedThisFrame())
         {
             if (stateCameraRotation == 1)
             {
@@ -68,28 +68,30 @@ public class CharacterController0_1 : MonoBehaviour
             }
             else if(stateCameraRotation == 3) 
             {
-                stateCameraRotation = 2;
+                stateCameraRotation = 4;
             }
         }
+
         if (stateCameraRotation == 3)
         {
             MoveCharacter(-1);
             JumpCharacter(-1);
-        } else
+            spriteRenderer.flipX = rb.linearVelocityX > -0.1;
+
+        } else if (stateCameraRotation == 1)
         {
             MoveCharacter(1);
             JumpCharacter(1);
+            spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         }
     }
 
     private void JumpCharacter(int jumpDir)
     {
-      //  Debug.Log("nbJumpsLeft : " + nbJumpsLeft);
         
 
         if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
         {
-            //Debug.Log("jumpAction : " + jumpDir * jumpForce * 100);
             rb.AddForceY(jumpDir * jumpForce * 100);
             nbJumpsLeft--;
         }
