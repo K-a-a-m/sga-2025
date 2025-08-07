@@ -57,7 +57,7 @@ public class CharacterController0_1 : MonoBehaviour
         //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
         //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
         //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
-        spriteRenderer.flipX = rb.linearVelocityX < 0;
+        spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         Debug.Log("stateCameraRotation : " + stateCameraRotation);
         if(interactionAction.WasPressedThisFrame())
         {
@@ -90,6 +90,7 @@ public class CharacterController0_1 : MonoBehaviour
         if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
         {
             //Debug.Log("jumpAction : " + jumpDir * jumpForce * 100);
+            rb.linearVelocityY = 0;
             rb.AddForceY(jumpDir * jumpForce * 100);
             nbJumpsLeft--;
         }
