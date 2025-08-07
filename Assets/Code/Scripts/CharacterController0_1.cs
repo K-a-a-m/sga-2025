@@ -92,7 +92,7 @@ public class CharacterController0_1 : MonoBehaviour
 
         if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
         {
-            rb.AddForceY(jumpDir * jumpForce * 100);
+            rb.AddForceY(jumpDir * jumpForce * 50);
             nbJumpsLeft--;
         }
     }
