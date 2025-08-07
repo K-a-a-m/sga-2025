@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Plateforme_END_01_1
+  m_Name: Right
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3731481953187525562, guid: 9e3787c11e76bf34fb3421a77c2d3798, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 4174e5eafd8d40647b47b075d65760da, type: 3}
+  m_Color: {r: 0, g: 0.10388827, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
