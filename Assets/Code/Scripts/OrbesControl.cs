@@ -3,6 +3,7 @@ using UnityEngine;
 public class OrbesControl : MonoBehaviour
 {
     [SerializeField] private GameObject playerController;
+    [SerializeField] private  OrbeMusicConttroller orbParent;
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
     private bool hasDetect = true;
@@ -19,6 +20,8 @@ public class OrbesControl : MonoBehaviour
             hasDetect = false;
             characterController.orbesNumber++;
             characterController.checkPoint = true;
+            orbParent.ChangeAudioClip();
+            
             Destroy(gameObject);
             
         }

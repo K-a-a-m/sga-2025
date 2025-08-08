@@ -9,7 +9,11 @@ public class AudioManager : MonoBehaviour
    private int currentIndexTrack = 0;
    [SerializeField] private CharacterController0_1 player;
    [SerializeField] private AudioSource audioSource;
-   
+
+   public AudioSource ASource
+   {
+       get { return audioSource; }
+   }
     void Start()
     {
         
