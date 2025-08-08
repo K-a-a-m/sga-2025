@@ -501,7 +501,7 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "15cef263-9014-4fd5-94d9-4e4a6234a6ef",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -570,9 +570,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "NextDialogue",
+                    "name": "NextDialog",
                     "type": "Button",
                     "id": "2ad1ef3d-421c-40b5-8ae2-b25594fa6218",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "99dcd7c8-60ff-40f1-9899-0bca41d06f16",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -1005,7 +1014,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NextDialogue",
+                    "action": "NextDialog",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dee1498f-9260-4ae9-bf09-728d12b4a825",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
