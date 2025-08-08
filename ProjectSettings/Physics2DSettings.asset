@@ -4,46 +4,78 @@
 Physics2DSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
+
+  # Gravity stays physical; prefer per‑Rigidbody2D gravityScale for game feel.
   m_Gravity: {x: 0, y: -9.81}
+
   m_DefaultMaterial: {fileID: 0}
-  m_VelocityIterations: 8
-  m_PositionIterations: 3
-  m_VelocityThreshold: 1
+
+  # Solver: higher iterations = more stable stacks/joints.
+  m_VelocityIterations: 12
+  m_PositionIterations: 4
+
+  # Low‑speed restitution cutoff (higher => less tiny bounces).
+  m_VelocityThreshold: 1.5
+
+  # Penetration correction limits (keep sane to avoid tunneling).
   m_MaxLinearCorrection: 0.2
   m_MaxAngularCorrection: 8
-  m_MaxTranslationSpeed: 100
-  m_MaxRotationSpeed: 360
+
+  # Allow fast movers; use Continuous collision on those bodies to avoid tunneling.
+  m_MaxTranslationSpeed: 200
+  m_MaxRotationSpeed: 720
+
+  # Baumgarte stabilization (penetration bias).
   m_BaumgarteScale: 0.2
   m_BaumgarteTimeOfImpactScale: 0.75
-  m_TimeToSleep: 0.5
-  m_LinearSleepTolerance: 0.01
+
+  # Sleeping: slightly quicker sleep with a looser linear tolerance.
+  m_TimeToSleep: 0.4
+  m_LinearSleepTolerance: 0.02
   m_AngularSleepTolerance: 2
-  m_DefaultContactOffset: 0.01
+
+  # Contact offset: a touch larger reduces sticky edges on pixel‑sized sprites.
+  m_DefaultContactOffset: 0.015
+
   m_JobOptions:
     serializedVersion: 2
-    useMultithreading: 0
-    useConsistencySorting: 0
-    m_InterpolationPosesPerJob: 100
-    m_NewContactsPerJob: 30
-    m_CollideContactsPerJob: 100
-    m_ClearFlagsPerJob: 200
-    m_ClearBodyForcesPerJob: 200
-    m_SyncDiscreteFixturesPerJob: 50
-    m_SyncContinuousFixturesPerJob: 50
-    m_FindNearestContactsPerJob: 100
-    m_UpdateTriggerContactsPerJob: 100
-    m_IslandSolverCostThreshold: 100
+    # Parallelize & keep ordering stable across frames (fewer jitter/frame‑to‑frame flips).
+    useMultithreading: 1
+    useConsistencySorting: 1
+
+    # Reasonable per‑job batch sizes for mid/high‑core CPUs.
+    m_InterpolationPosesPerJob: 64
+    m_NewContactsPerJob: 64
+    m_CollideContactsPerJob: 128
+    m_ClearFlagsPerJob: 256
+    m_ClearBodyForcesPerJob: 256
+    m_SyncDiscreteFixturesPerJob: 64
+    m_SyncContinuousFixturesPerJob: 32
+    m_FindNearestContactsPerJob: 128
+    m_UpdateTriggerContactsPerJob: 128
+
+    # Island scheduling: reduce overhead on busy scenes.
+    m_IslandSolverCostThreshold: 200
     m_IslandSolverBodyCostScale: 1
     m_IslandSolverContactCostScale: 10
     m_IslandSolverJointCostScale: 10
-    m_IslandSolverBodiesPerJob: 50
-    m_IslandSolverContactsPerJob: 50
+    m_IslandSolverBodiesPerJob: 64
+    m_IslandSolverContactsPerJob: 64
+
+  # Fixed update simulation (recommended). Keep Time.fixedDeltaTime at ~0.0166667.
   m_SimulationMode: 0
+
+  # Raycasts & overlap queries.
   m_QueriesHitTriggers: 1
-  m_QueriesStartInColliders: 1
+  # Usually better off for “spawn in collider” edge cases; turn on if your tools rely on it.
+  m_QueriesStartInColliders: 0
+
+  # Callbacks & transforms.
   m_CallbacksOnDisable: 1
   m_ReuseCollisionCallbacks: 1
   m_AutoSyncTransforms: 0
+
+  # Gizmos/debug (editor only).
   m_AlwaysShowColliders: 0
   m_ShowColliderSleep: 1
   m_ShowColliderContacts: 0
@@ -53,4 +85,6 @@ Physics2DSettings:
   m_ColliderAsleepColor: {r: 0.5686275, g: 0.95686275, b: 0.54509807, a: 0.36078432}
   m_ColliderContactColor: {r: 1, g: 0, b: 1, a: 0.6862745}
   m_ColliderAABBColor: {r: 1, g: 1, b: 0, a: 0.2509804}
+
+  # Keep your layer matrix tailored in the Editor. This all‑true mask is unchanged.
   m_LayerCollisionMatrix: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
