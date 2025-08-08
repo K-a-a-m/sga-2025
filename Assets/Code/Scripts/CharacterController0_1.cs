@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -17,7 +18,12 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private GameObject bounderyUp;
     [SerializeField] private GameObject bounderyDown;
     [SerializeField] private int targetOrbes;
-   // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
+    [SerializeField] private AudioClip JumpSFX;
+    [SerializeField] private AudioClip LandSFX;
+    [SerializeField] private AudioClip OrbeSFX;
+    [SerializeField] private AudioClip RotationSFX;
+    [SerializeField] private AudioClip MarcheSFX;
+    // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
     public int stateCameraRotation = 1;
@@ -27,6 +33,7 @@ public class CharacterController0_1 : MonoBehaviour
     private Quaternion respawnRot;
     private Collider2D bounderyUpCollider;
     private Collider2D bounderyDownCollider;
+    private AudioSource audioSource;
 
 
 
@@ -43,6 +50,8 @@ public class CharacterController0_1 : MonoBehaviour
     public int nbJumpsLeft = 0;
     public bool checkPoint = false;
 
+    TriggerControl[] controllers;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,6 +67,8 @@ public class CharacterController0_1 : MonoBehaviour
         respawnPos = this.transform.position;
         respawnRot = this.transform.rotation;
         respawnState = stateCameraRotation;
+        audioSource = GetComponent<AudioSource>();
+        controllers = GameObject.FindObjectsByType<TriggerControl>(FindObjectsSortMode.None);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -71,6 +82,11 @@ public class CharacterController0_1 : MonoBehaviour
             this.transform.position = respawnPos;
             this.transform.rotation = respawnRot;
             stateCameraRotation = respawnState;
+            foreach (TriggerControl control in controllers)
+            {
+                control.gameObject.SetActive(true);
+
+            }
         }
 
     }
@@ -80,9 +96,9 @@ public class CharacterController0_1 : MonoBehaviour
     {
 
 
-        charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
-        charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
-        charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
+        charachterAnimator.SetFloat(name: "speedY", rb.linearVelocityY);
+        charachterAnimator.SetFloat(name: "absSpeedX", Mathf.Abs(rb.linearVelocityX));
+        charachterAnimator.SetBool(name: "isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
 
         if (stateCameraRotation == 3)
@@ -91,7 +107,8 @@ public class CharacterController0_1 : MonoBehaviour
             JumpCharacter(-1);
             spriteRenderer.flipX = rb.linearVelocityX > -0.1;
 
-        } else if (stateCameraRotation == 1)
+        }
+        else if (stateCameraRotation == 1)
         {
             MoveCharacter(1);
             JumpCharacter(1);
@@ -102,7 +119,7 @@ public class CharacterController0_1 : MonoBehaviour
         {
             pinceauGoal.SetActive(true);
         }
-        
+
         if (checkPoint)
         {
             checkPoint = false;
@@ -110,6 +127,7 @@ public class CharacterController0_1 : MonoBehaviour
             respawnRot = this.transform.rotation;
             respawnState = stateCameraRotation;
         }
+
 
     }
 
@@ -125,6 +143,8 @@ public class CharacterController0_1 : MonoBehaviour
             rb.AddForceY(jumpDir * jumpForce * 50);
 
             nbJumpsLeft--;
+
+            audioSource.PlayOneShot(JumpSFX);
         }
     }
 
@@ -132,6 +152,10 @@ public class CharacterController0_1 : MonoBehaviour
     {
         Vector2 move = moveAction.ReadValue<Vector2>();
         rb.linearVelocityX = moveDir * move.x * moveSpeed;
+        if (Mathf.Abs(rb.linearVelocityX) > 0.01 && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(MarcheSFX);
+        }
     }
 
 
