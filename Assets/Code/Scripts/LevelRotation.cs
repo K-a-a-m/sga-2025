@@ -5,8 +5,8 @@ public class LevelRotation : MonoBehaviour
     [SerializeField] private GameObject playerController;
     [SerializeField] private GameObject cameraController;
     [SerializeField] private int animationDuration;
-    [SerializeField] private int gravity;
     public bool willRotate=true;
+    [SerializeField] private float GravityScale;
     private CharacterController0_1 characterController;
     private Rigidbody2D characterRigidbody;
     private bool startTransitionUP = true;
@@ -37,13 +37,13 @@ public class LevelRotation : MonoBehaviour
     {
         if(characterController.stateCameraRotation == 1)//Niveau a l'endroit
         {
-            characterRigidbody.gravityScale = gravity;
+            characterRigidbody.gravityScale = GravityScale;
             playerController.transform.eulerAngles = new Vector3(0,0,0);
             //cameraController.transform.eulerAngles = new Vector3(0,0,0);
             startTransitionUP = true;
 
         }
-        else if(characterController.stateCameraRotation == 2)//rotation caméra vers l'envers
+        else if(characterController.stateCameraRotation == 2)//rotation camï¿½ra vers l'envers
         {
             //Original poistion : x=12.54 y=4.5 z=-10
             //Time.timeScale = 0f;
@@ -75,9 +75,10 @@ public class LevelRotation : MonoBehaviour
                 characterController.stateCameraRotation = 3;
             }
         }
-        else if (characterController.stateCameraRotation == 3)//niveau retoruné
+        else if (characterController.stateCameraRotation == 3)//niveau retorunï¿½
         {
-            characterRigidbody.gravityScale = -gravity;
+
+            characterRigidbody.gravityScale = -GravityScale;
             playerController.transform.eulerAngles = new Vector3(0, 0, 180f);
             //cameraController.transform.eulerAngles = new Vector3(0, 0, 180f);
             startTransitionDOWN = true;
@@ -105,7 +106,7 @@ public class LevelRotation : MonoBehaviour
            
 
         }
-        else if (characterController.stateCameraRotation == 5)//Tremblement caméra/écran quand c'est up
+        else if (characterController.stateCameraRotation == 5)//Tremblement camï¿½ra/ï¿½cran quand c'est up
         {
 
             if (startTransitionUP)
@@ -133,7 +134,7 @@ public class LevelRotation : MonoBehaviour
             }
 
         }
-        else if (characterController.stateCameraRotation == 6)//Tremblement caméra/écran quand c'est down
+        else if (characterController.stateCameraRotation == 6)//Tremblement camï¿½ra/ï¿½cran quand c'est down
         {
 
             if (startTransitionDOWN)
