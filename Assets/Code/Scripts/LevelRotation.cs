@@ -5,6 +5,8 @@ public class LevelRotation : MonoBehaviour
     [SerializeField] private GameObject playerController;
     [SerializeField] private GameObject cameraController;
     [SerializeField] private int animationDuration;
+    [SerializeField] private AudioClip RotationSFX;
+    [SerializeField] private AudioClip shakeSFX;
     public bool willRotate=true;
     [SerializeField] private float GravityScale;
     private CharacterController0_1 characterController;
@@ -16,11 +18,7 @@ public class LevelRotation : MonoBehaviour
     private float currentRotationStep;
     private int currentTremblement;
     private float[] tremblement = {0f,1.5f,3f,1.5f,0f,-1.5f,-3f,-1.5f,0f,1.5f,3f,1.5f,0f,-1.5f,-3f,-1.5f,0f};
-    //private float magnitude;
-    //private float duration;
-    //private Vector3 originalPosition;
-
-
+    private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +27,7 @@ public class LevelRotation : MonoBehaviour
         Time.fixedDeltaTime = 0.05f;
         characterRigidbody = playerController.GetComponent<Rigidbody2D>();
         rotationStep = 180f / (animationDuration / 50f);
-        //originalPosition = transform.localPosition;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,16 +41,12 @@ public class LevelRotation : MonoBehaviour
             startTransitionUP = true;
 
         }
-        else if(characterController.stateCameraRotation == 2)//rotation cam�ra vers l'envers
+        else if(characterController.stateCameraRotation == 2)//rotation caméra vers l'envers
         {
-            //Original poistion : x=12.54 y=4.5 z=-10
-            //Time.timeScale = 0f;
-
-            //float x = Random.Range(-1f, 1f) * magnitude;
-            //float y = Random.Range(-1f, 1f) * magnitude;
-            //transform.localPosition = originalPosition + new Vector3(x, y, 0);
-
-            //Time.timeScale = 1f;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(RotationSFX);
+            }
 
             characterController.nbJumpsLeft = 0;
             if (startTransitionUP)
@@ -85,6 +79,10 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 4)//Rotation cam vers l'endroit
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(RotationSFX);
+            }
             characterController.nbJumpsLeft = 0;
             if (startTransitionDOWN)
             {
@@ -109,6 +107,10 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 5)//Tremblement cam�ra/�cran quand c'est up
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(shakeSFX);
+            }
             characterController.nbJumpsLeft = 0;
             if (startTransitionUP)
             {
@@ -137,6 +139,10 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 6)//Tremblement cam�ra/�cran quand c'est down
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(shakeSFX);
+            }
             characterController.nbJumpsLeft = 0;
             if (startTransitionDOWN)
             {

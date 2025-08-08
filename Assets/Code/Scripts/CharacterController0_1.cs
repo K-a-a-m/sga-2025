@@ -19,9 +19,7 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private GameObject bounderyDown;
     [SerializeField] private int targetOrbes;
     [SerializeField] private AudioClip JumpSFX;
-    [SerializeField] private AudioClip LandSFX;
     [SerializeField] private AudioClip OrbeSFX;
-    [SerializeField] private AudioClip RotationSFX;
     [SerializeField] private AudioClip MarcheSFX;
     // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
@@ -77,10 +75,11 @@ public class CharacterController0_1 : MonoBehaviour
             nbJumpsLeft = 2;
         } 
 
-        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)
+        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)//Mort du player et déclenchement du respawn
         {
             this.transform.position = respawnPos;
             this.transform.rotation = respawnRot;
+            rb.linearVelocityY = 0f;
             stateCameraRotation = respawnState;
             foreach (TriggerControl control in controllers)
             {
@@ -145,7 +144,9 @@ public class CharacterController0_1 : MonoBehaviour
             nbJumpsLeft--;
 
             audioSource.PlayOneShot(JumpSFX);
+
         }
+        
     }
 
     private void MoveCharacter(int moveDir)

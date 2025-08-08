@@ -15,7 +15,6 @@ public class PinceauControl : MonoBehaviour
     {
         if (colliderTrigger.tag == "Player" && hasDetect)
         {
-            Debug.Log("pinceau");
             //SceneManager.LoadScene(sceneName);
             hasDetect = false;
         }
