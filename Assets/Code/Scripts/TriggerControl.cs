@@ -23,8 +23,10 @@ public class TriggerControl : MonoBehaviour
             {
                 characterController.stateCameraRotation = 6;
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
     }
 }
+
+//gameobject = 
