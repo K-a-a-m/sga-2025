@@ -19,9 +19,7 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private GameObject bounderyDown;
     [SerializeField] private int targetOrbes;
     [SerializeField] private AudioClip JumpSFX;
-    [SerializeField] private AudioClip LandSFX;
     [SerializeField] private AudioClip OrbeSFX;
-    [SerializeField] private AudioClip RotationSFX;
     [SerializeField] private AudioClip MarcheSFX;
     // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
@@ -145,7 +143,9 @@ public class CharacterController0_1 : MonoBehaviour
             nbJumpsLeft--;
 
             audioSource.PlayOneShot(JumpSFX);
+
         }
+        
     }
 
     private void MoveCharacter(int moveDir)
