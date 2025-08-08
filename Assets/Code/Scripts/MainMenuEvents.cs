@@ -10,4 +10,14 @@ public class MainMenuEvents : MonoBehaviour
     {
         Debug.Log("START GAME");
     }
+
+    public void ShowCredits()
+    {
+        Debug.Log("SHOW CREDITS");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("QUIT GAME");
+    }
 }
