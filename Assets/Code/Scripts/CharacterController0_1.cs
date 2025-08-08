@@ -13,13 +13,15 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Collider2D groundCollider;
+    [SerializeField] private GameObject pinceauGoal;
    // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
     public int stateCameraRotation = 1;
+    public int orbesNumber = 0;
 
     private Rigidbody2D rb;
-    //Animator charachterAnimator;
+    Animator charachterAnimator;
     SpriteRenderer spriteRenderer;
 
     private InputAction moveAction; //Bien indiquer le nom de la fonction pour plus tard
@@ -28,17 +30,17 @@ public class CharacterController0_1 : MonoBehaviour
 
     private InputAction interactionAction;
 
-    public int nbJumpsLeft = 0; 
+    public int nbJumpsLeft = 0;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //charachterAnimator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         interactionAction = InputSystem.actions.FindAction("Interact");
-
+        charachterAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -54,9 +56,9 @@ public class CharacterController0_1 : MonoBehaviour
     {
 
 
-        //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
-        //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
-        //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
+        charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
+        charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
+        charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
 
 
@@ -87,6 +89,13 @@ public class CharacterController0_1 : MonoBehaviour
             JumpCharacter(1);
             spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         }
+
+        if (orbesNumber == 1)//changer cette valeur avec nombre placée dans scene
+        {
+            //Debug.Log();
+            pinceauGoal.SetActive(true);
+        }
+
     }
 
     private void JumpCharacter(int jumpDir)
