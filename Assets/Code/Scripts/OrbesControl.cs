@@ -18,7 +18,7 @@ public class OrbesControl : MonoBehaviour
         {
             hasDetect = false;
             characterController.orbesNumber++;
-            Debug.Log("Orbes Nuber : " + characterController.orbesNumber);
+            characterController.checkPoint = true;
             Destroy(gameObject);
             
         }
