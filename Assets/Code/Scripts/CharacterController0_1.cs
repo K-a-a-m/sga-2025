@@ -1,8 +1,11 @@
 using System;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Diagnostics;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
+//UnityEngine.Debug.Log // avec system diagnostics
 
 public class CharacterController0_1 : MonoBehaviour
 {
@@ -37,9 +40,7 @@ public class CharacterController0_1 : MonoBehaviour
         interactionAction = InputSystem.actions.FindAction("Interact");
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if((groundLayer.value & (1 << other.gameObject.layer)) !=0)
@@ -57,24 +58,22 @@ public class CharacterController0_1 : MonoBehaviour
         //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
         //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
-        Debug.Log("stateCameraRotation : " + stateCameraRotation);
-        if(interactionAction.WasPressedThisFrame())
 
 
 
             //spriteRenderer.flipX = rb.linearVelocityX < -0.1;
-        if (interactionAction.WasPressedThisFrame())
-        {
-            if (stateCameraRotation == 1)
-            {
-                stateCameraRotation = 2;
+       // if (interactionAction.WasPressedThisFrame())
+        //{
+          //  if (stateCameraRotation == 1)
+            //{
+              //  stateCameraRotation = 5;
                 //horizontal = -horizontal;
-            }
-            else if(stateCameraRotation == 3) 
-            {
-                stateCameraRotation = 4;
-            }
-        }
+            //}
+            //else if(stateCameraRotation == 3) 
+            //{
+              //  stateCameraRotation = 6;
+            //}
+        //}
 
         if (stateCameraRotation == 3)
         {
