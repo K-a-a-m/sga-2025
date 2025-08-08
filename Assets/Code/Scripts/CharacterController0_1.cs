@@ -75,10 +75,11 @@ public class CharacterController0_1 : MonoBehaviour
             nbJumpsLeft = 2;
         } 
 
-        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)
+        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)//Mort du player et déclenchement du respawn
         {
             this.transform.position = respawnPos;
             this.transform.rotation = respawnRot;
+            rb.linearVelocityY = 0f;
             stateCameraRotation = respawnState;
             foreach (TriggerControl control in controllers)
             {
