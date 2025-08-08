@@ -1,17 +1,8 @@
-using NUnit.Framework;
-using NUnit.Framework.Internal;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
-using static UnityEditor.ShaderData;
-using static UnityEngine.Rendering.DebugUI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -22,8 +13,8 @@ public class DialogManager : MonoBehaviour
     int dialogIndex = 0;
     int currentDialog = 1;
 
-    List<Tuple<string, string>> dialogFin = new List<Tuple<string, string>>()
-    {
+        List<Tuple<string, string>> dialogFin = new List<Tuple<string, string>>()
+        {
         new Tuple<string,string> ("Super, j’ai retrouvé mon pinceau magique.", "Milo"),
         new Tuple<string,string> ("Par les pouvoirs qui me sont conférés, je veux que tu restaures le tableau où m’on écureuil Albert est enfermé et que tu le libères !", "Milo"),
         new Tuple<string,string> ("Je suis trop content de te revoir, mon petit Albert !", "Milo"),
@@ -105,9 +96,6 @@ public class DialogManager : MonoBehaviour
 
             }   
             speakerText.text = speaker;
-            
-            
-
         }
     }
 }
