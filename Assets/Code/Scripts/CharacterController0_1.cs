@@ -56,9 +56,9 @@ public class CharacterController0_1 : MonoBehaviour
     {
 
 
-        charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
-        charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
-        charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
+        //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
+        //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
+        //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
 
 

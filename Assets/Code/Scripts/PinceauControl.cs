@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class PinceauControl : MonoBehaviour
 {
     private Collider2D colliderTrigger;
-    
+    private bool hasDetect = true;
 
 
     private void Start()
@@ -13,10 +13,11 @@ public class PinceauControl : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {
-        if (colliderTrigger.tag == "Player")
+        if (colliderTrigger.tag == "Player" && hasDetect)
         {
             Debug.Log("pinceau");
             //SceneManager.LoadScene(sceneName);
+            hasDetect = false;
         }
 
     }
