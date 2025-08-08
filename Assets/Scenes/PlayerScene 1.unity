@@ -6145,12 +6145,8 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Ble
+      value: Orbe (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 67a495f7a0e7e9b4aab82692a3b93134, type: 3}
     - target: {fileID: 7234793975336376338, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.34
@@ -6230,12 +6226,8 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Jau
+      value: Orbe
       objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 353f593be3f142249aeec19707c800d1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6307,12 +6299,8 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Rou
+      value: Orbe (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 143b890c7750fc8489747686ef7b3b65, type: 3}
     - target: {fileID: 7234793975336376338, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.34
@@ -6392,12 +6380,8 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Cya
+      value: Orbe (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 2422afd87368e9c448577ddffb8451c4, type: 3}
     - target: {fileID: 7234793975336376338, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.34
@@ -6477,15 +6461,7 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Mag
-      objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ab906a9ab944b049b9d9e00fe9cf24b, type: 3}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
+      value: Orbe (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7234793975336376338, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -6769,12 +6745,8 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Ver
+      value: Orbe (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: c1c4f077614451f49a2dcd9d1980e49d, type: 3}
     - target: {fileID: 7234793975336376338, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.34
@@ -7170,10 +7142,6 @@ PrefabInstance:
     - target: {fileID: 6696976221584862421, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: m_Name
       value: Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 6696976221584862421, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
