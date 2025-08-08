@@ -4,6 +4,7 @@ public class OrbesControl : MonoBehaviour
 {
     [SerializeField] private GameObject playerController;
     [SerializeField] private  OrbeMusicConttroller orbParent;
+    [SerializeField] private GameObject orbParentGO;
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
     private bool hasDetect = true;
@@ -23,7 +24,7 @@ public class OrbesControl : MonoBehaviour
             orbParent.ChangeAudioClip();
             
             Destroy(gameObject);
-            
+            orbParentGO.SetActive(false);
         }
 
     }

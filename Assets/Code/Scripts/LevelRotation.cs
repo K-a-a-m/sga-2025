@@ -129,10 +129,13 @@ public class LevelRotation : MonoBehaviour
                 if (willRotate)
                 {
                     characterController.stateCameraRotation = 2;
+                    
                 }
                 else
                 {
                     characterController.stateCameraRotation = 1;
+                    willRotate = true; 
+
                 }
             }
 
@@ -158,14 +161,7 @@ public class LevelRotation : MonoBehaviour
             else
             {
                 startTransitionDOWN = true;
-                if (willRotate)
-                {
-                    characterController.stateCameraRotation = 4;
-                }
-                else
-                {
-                    characterController.stateCameraRotation = 3;
-                }
+                characterController.stateCameraRotation = 4;
             }
 
         }

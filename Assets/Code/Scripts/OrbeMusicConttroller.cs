@@ -9,36 +9,44 @@ public class OrbeMusicConttroller : MonoBehaviour
     [SerializeField] private AudioClip audioClipNarrator;
     private Collider2D colliderTrigger;
     [SerializeField] private AudioManager audioManager;
-    private bool hasEnter = false;
+    public bool hasEnter = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        colliderTrigger = GetComponent<Collider2D>();
+        audioSource.loop = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        colliderTrigger = GetComponent<Collider2D>();
+        if (hasEnter)
+        {
+            float distanceVolOrb = (15 - (Vector2.Distance( player.transform.position ,transform.position))) / 15;
+            audioSource.volume = distanceVolOrb; 
+            audioManager.ASource.volume = (1 - distanceVolOrb) * 0.8f;
+        }
     }
+    
     
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {
-        if (colliderTrigger.tag == "Player" && !hasEnter)
+        if (colliderTrigger.tag == "Player")
         {
             hasEnter = true;
-            audioManager.ASource.Stop();
+            //audioManager.ASource.Stop();
             audioSource.Play();
         }
     }
 
     private void OnTriggerExit2D(Collider2D colliderTrigger)
     {
-        if (colliderTrigger.tag == "Player" && hasEnter)
+        if (colliderTrigger.tag == "Player")
         {
             hasEnter = false;
             audioSource.Stop();
-            audioManager.ASource.Play();
+            audioManager.ASource.volume = 0.8f;
+            //audioManager.ASource.Play();
         }
     }
 
@@ -46,6 +54,7 @@ public class OrbeMusicConttroller : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.clip = audioClipNarrator;
+        audioSource.loop = false;
         audioSource.Play();
     }
 }

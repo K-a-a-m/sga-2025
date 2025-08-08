@@ -5,7 +5,7 @@ public class PinceauControl : MonoBehaviour
 {
     private Collider2D colliderTrigger;
     private bool hasDetect = true;
-
+    [SerializeField] private DialogManager dialogManager;
 
     private void Start()
     {
@@ -17,6 +17,7 @@ public class PinceauControl : MonoBehaviour
         {
             //SceneManager.LoadScene(sceneName);
             hasDetect = false;
+            dialogManager.currentDialog = 2;
         }
 
     }
