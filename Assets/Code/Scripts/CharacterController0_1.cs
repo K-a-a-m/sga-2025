@@ -1,9 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Diagnostics;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 //UnityEngine.Debug.Log // avec system diagnostics
 
@@ -12,13 +12,30 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask outOfPlayLayer;
     [SerializeField] private Collider2D groundCollider;
     [SerializeField] private GameObject pinceauGoal;
-   // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
+    [SerializeField] private GameObject bounderyUp;
+    [SerializeField] private GameObject bounderyDown;
+    [SerializeField] private int targetOrbes;
+    [SerializeField] private AudioClip JumpSFX;
+    [SerializeField] private AudioClip LandSFX;
+    [SerializeField] private AudioClip OrbeSFX;
+    [SerializeField] private AudioClip RotationSFX;
+    [SerializeField] private AudioClip MarcheSFX;
+    // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
     public int stateCameraRotation = 1;
     public int orbesNumber = 0;
+    private Vector3 respawnPos;
+    private int respawnState;
+    private Quaternion respawnRot;
+    private Collider2D bounderyUpCollider;
+    private Collider2D bounderyDownCollider;
+    private AudioSource audioSource;
+
+
 
     private Rigidbody2D rb;
     Animator charachterAnimator;
@@ -31,6 +48,9 @@ public class CharacterController0_1 : MonoBehaviour
     private InputAction interactionAction;
 
     public int nbJumpsLeft = 0;
+    public bool checkPoint = false;
+
+    TriggerControl[] controllers;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +62,13 @@ public class CharacterController0_1 : MonoBehaviour
         interactionAction = InputSystem.actions.FindAction("Interact");
         charachterAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        bounderyUpCollider = bounderyUp.GetComponent<Collider2D>();
+        bounderyDownCollider = bounderyDown.GetComponent<Collider2D>();
+        respawnPos = this.transform.position;
+        respawnRot = this.transform.rotation;
+        respawnState = stateCameraRotation;
+        audioSource = GetComponent<AudioSource>();
+        controllers = GameObject.FindObjectsByType<TriggerControl>(FindObjectsSortMode.None);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -49,6 +76,19 @@ public class CharacterController0_1 : MonoBehaviour
         {
             nbJumpsLeft = 2;
         } 
+
+        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)
+        {
+            this.transform.position = respawnPos;
+            this.transform.rotation = respawnRot;
+            stateCameraRotation = respawnState;
+            foreach (TriggerControl control in controllers)
+            {
+                control.gameObject.SetActive(true);
+
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -56,26 +96,10 @@ public class CharacterController0_1 : MonoBehaviour
     {
 
 
-        //charachterAnimator.SetFloat(name:"speedY", rb.linearVelocityY);
-        //charachterAnimator.SetFloat(name:"absSpeedX", Mathf.Abs(rb.linearVelocityX));
-        //charachterAnimator.SetBool(name:"isGrounded", groundCollider.IsTouchingLayers(groundLayer));
+        charachterAnimator.SetFloat(name: "speedY", rb.linearVelocityY);
+        charachterAnimator.SetFloat(name: "absSpeedX", Mathf.Abs(rb.linearVelocityX));
+        charachterAnimator.SetBool(name: "isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
-
-
-
-            //spriteRenderer.flipX = rb.linearVelocityX < -0.1;
-       // if (interactionAction.WasPressedThisFrame())
-        //{
-          //  if (stateCameraRotation == 1)
-            //{
-              //  stateCameraRotation = 5;
-                //horizontal = -horizontal;
-            //}
-            //else if(stateCameraRotation == 3) 
-            //{
-              //  stateCameraRotation = 6;
-            //}
-        //}
 
         if (stateCameraRotation == 3)
         {
@@ -83,18 +107,27 @@ public class CharacterController0_1 : MonoBehaviour
             JumpCharacter(-1);
             spriteRenderer.flipX = rb.linearVelocityX > -0.1;
 
-        } else if (stateCameraRotation == 1)
+        }
+        else if (stateCameraRotation == 1)
         {
             MoveCharacter(1);
             JumpCharacter(1);
             spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         }
 
-        if (orbesNumber == 1)//changer cette valeur avec nombre placée dans scene
+        if (orbesNumber == targetOrbes)//changer cette valeur avec nombre placée dans scene
         {
-            //Debug.Log();
             pinceauGoal.SetActive(true);
         }
+
+        if (checkPoint)
+        {
+            checkPoint = false;
+            respawnPos = this.transform.position;
+            respawnRot = this.transform.rotation;
+            respawnState = stateCameraRotation;
+        }
+
 
     }
 
@@ -105,12 +138,13 @@ public class CharacterController0_1 : MonoBehaviour
         if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
         {
 
-            //Debug.Log("jumpAction : " + jumpDir * jumpForce * 100);
             rb.linearVelocityY = 0;
 
             rb.AddForceY(jumpDir * jumpForce * 50);
 
             nbJumpsLeft--;
+
+            audioSource.PlayOneShot(JumpSFX);
         }
     }
 
@@ -118,5 +152,12 @@ public class CharacterController0_1 : MonoBehaviour
     {
         Vector2 move = moveAction.ReadValue<Vector2>();
         rb.linearVelocityX = moveDir * move.x * moveSpeed;
+        if (Mathf.Abs(rb.linearVelocityX) > 0.01 && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(MarcheSFX);
+        }
     }
+
+
 }
+
