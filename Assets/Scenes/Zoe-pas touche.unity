@@ -1051,11 +1051,11 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 7
-  m_wordSpacing: 20
-  m_lineSpacing: 50
+  m_characterSpacing: 3
+  m_wordSpacing: 10
+  m_lineSpacing: 1
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 130
+  m_paragraphSpacing: 100
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
@@ -1366,7 +1366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2021119866
 MonoBehaviour:
   m_ObjectHideFlags: 0
