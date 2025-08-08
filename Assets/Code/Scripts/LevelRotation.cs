@@ -54,7 +54,7 @@ public class LevelRotation : MonoBehaviour
 
             //Time.timeScale = 1f;
 
-
+            characterController.nbJumpsLeft = 0;
             if (startTransitionUP)
             {
                 currentFrame = 0;
@@ -85,6 +85,7 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 4)//Rotation cam vers l'endroit
         {
+            characterController.nbJumpsLeft = 0;
             if (startTransitionDOWN)
             {
                 currentFrame = 0;
@@ -108,7 +109,7 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 5)//Tremblement cam�ra/�cran quand c'est up
         {
-
+            characterController.nbJumpsLeft = 0;
             if (startTransitionUP)
             {
                 startTransitionUP = false;
@@ -136,7 +137,7 @@ public class LevelRotation : MonoBehaviour
         }
         else if (characterController.stateCameraRotation == 6)//Tremblement cam�ra/�cran quand c'est down
         {
-
+            characterController.nbJumpsLeft = 0;
             if (startTransitionDOWN)
             {
                 startTransitionDOWN = false;
