@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6997698555628118942}
   - component: {fileID: 393092580349080667}
   - component: {fileID: 2721164410206560248}
+  - component: {fileID: 7777186880835288742}
   m_Layer: 0
   m_Name: Perso-1_40
   m_TagString: Player
