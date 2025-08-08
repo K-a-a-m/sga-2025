@@ -1,0 +1,1963 @@
+fileFormatVersion: 2
+guid: 4d3ba7e3f0a28db4eb5b3d7fc7eaeea9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4359955264391611208
+    second: Move03_0
+  - first:
+      213: 4511562117573306133
+    second: Move03_1
+  - first:
+      213: -401563134699239784
+    second: Move03_2
+  - first:
+      213: 6517627124729063893
+    second: Move03_3
+  - first:
+      213: 4033560842554181292
+    second: Move03_4
+  - first:
+      213: 4860293958627628070
+    second: Move03_5
+  - first:
+      213: -7074752836375079098
+    second: Move03_6
+  - first:
+      213: 6225457650167662819
+    second: Move03_7
+  - first:
+      213: 2877832991322409545
+    second: Move03_8
+  - first:
+      213: 6611973203836898500
+    second: Move03_9
+  - first:
+      213: 331229703819611393
+    second: Move03_10
+  - first:
+      213: 4132971728162533141
+    second: Move03_11
+  - first:
+      213: -8926526717782758919
+    second: Move03_12
+  - first:
+      213: -7660135536690130684
+    second: Move03_13
+  - first:
+      213: -6211697030890985651
+    second: Move03_14
+  - first:
+      213: -449296352519711603
+    second: Move03_15
+  - first:
+      213: -2932545961805661710
+    second: Move03_16
+  - first:
+      213: 1105440035830341281
+    second: Move03_17
+  - first:
+      213: -4250801780965347806
+    second: Move03_18
+  - first:
+      213: -1947049097411298377
+    second: Move03_19
+  - first:
+      213: -5103915772188858781
+    second: Move03_20
+  - first:
+      213: -8304028772580289663
+    second: Move03_21
+  - first:
+      213: 8950420732706983384
+    second: Move03_22
+  - first:
+      213: 4120766395450871835
+    second: Move03_23
+  - first:
+      213: 6578337731042566813
+    second: Move03_24
+  - first:
+      213: 1808985372411431340
+    second: Move03_25
+  - first:
+      213: 5313155691417030405
+    second: Move03_26
+  - first:
+      213: -5087161891595873967
+    second: Move03_27
+  - first:
+      213: 274897035416008590
+    second: Move03_28
+  - first:
+      213: 6331090524853621663
+    second: Move03_29
+  - first:
+      213: -5867820164026565022
+    second: Move03_30
+  - first:
+      213: -8303008481091018886
+    second: Move03_31
+  - first:
+      213: 2038538134514256434
+    second: Move03_32
+  - first:
+      213: -6500663618885551144
+    second: Move03_33
+  - first:
+      213: -667919834409780304
+    second: Move03_34
+  - first:
+      213: -5362317572517525902
+    second: Move03_35
+  - first:
+      213: -2567039463182533387
+    second: Move03_36
+  - first:
+      213: 4001449684239910612
+    second: Move03_37
+  - first:
+      213: 8268433013350940419
+    second: Move03_38
+  - first:
+      213: -676451523885942899
+    second: Move03_39
+  - first:
+      213: -4234866685679077292
+    second: Move03_40
+  - first:
+      213: -8306726661669777568
+    second: Move03_41
+  - first:
+      213: 3731065738096524239
+    second: Move03_42
+  - first:
+      213: 1580846123797960632
+    second: Move03_43
+  - first:
+      213: -2236308967546781386
+    second: Move03_44
+  - first:
+      213: -4268285401176182360
+    second: Move03_45
+  - first:
+      213: -9143163195385397328
+    second: Move03_46
+  - first:
+      213: -3732584971487086270
+    second: Move03_47
+  - first:
+      213: 2913674954559020358
+    second: Move03_48
+  - first:
+      213: 4498446190480566828
+    second: Move03_49
+  - first:
+      213: -5714154237053363566
+    second: Move03_50
+  - first:
+      213: -3436518710606201202
+    second: Move03_51
+  - first:
+      213: -8541075388461685307
+    second: Move03_52
+  - first:
+      213: 8143653154239098550
+    second: Move03_53
+  - first:
+      213: 4486359191871896367
+    second: Move03_54
+  - first:
+      213: 4734970482009061985
+    second: Move03_55
+  - first:
+      213: -104727931212746128
+    second: Move03_56
+  - first:
+      213: 529211789842932954
+    second: Move03_57
+  - first:
+      213: -4586389359878198836
+    second: Move03_58
+  - first:
+      213: -9071596149088617279
+    second: Move03_59
+  - first:
+      213: 5806874567847744179
+    second: Move03_60
+  - first:
+      213: -8751841038442215573
+    second: Move03_61
+  - first:
+      213: -2561925057714646300
+    second: Move03_62
+  - first:
+      213: 32926506428620627
+    second: Move03_63
+  - first:
+      213: -1374102945997937167
+    second: Move03_64
+  - first:
+      213: 7587501557090599426
+    second: Move03_65
+  - first:
+      213: 4714522292520628535
+    second: Move03_66
+  - first:
+      213: 8180547593907462678
+    second: Move03_67
+  - first:
+      213: 3334722937495376357
+    second: Move03_68
+  - first:
+      213: 1475275020612852515
+    second: Move03_69
+  - first:
+      213: 4771481668577120747
+    second: Move03_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Move03_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 920
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84308a2863ca18c30800000000000000
+      internalID: 4359955264391611208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 908
+        width: 44
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517e018b7d94c9e30800000000000000
+      internalID: 4511562117573306133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 982
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8960c51e47c5d6af0800000000000000
+      internalID: -401563134699239784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 924
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d92deb8653437a50800000000000000
+      internalID: 6517627124729063893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 945
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca60e5037361af730800000000000000
+      internalID: 4033560842554181292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 962
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6241afbba9b337340800000000000000
+      internalID: 4860293958627628070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 959
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6471d2a67cd61dd90800000000000000
+      internalID: -7074752836375079098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 948
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e84b7abfb4456650800000000000000
+      internalID: 6225457650167662819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_8
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 901
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a0ca2bbdd10f720800000000000000
+      internalID: 2877832991322409545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 920
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc891fd89272cb50800000000000000
+      internalID: 6611973203836898500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 919
+        width: 61
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dc93329a3c89400800000000000000
+      internalID: 331229703819611393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 942
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f2cdba3e34b5930800000000000000
+      internalID: 4132971728162533141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 948
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f96684be3b9e1480800000000000000
+      internalID: -8926526717782758919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_13
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 943
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4011d34805bb1b590800000000000000
+      internalID: -7660135536690130684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 894
+        width: 11
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47e46d167e9bc9a0800000000000000
+      internalID: -6211697030890985651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_15
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 927
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d841f2d0957c3c9f0800000000000000
+      internalID: -449296352519711603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_16
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 899
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9311b2cf08d47d0800000000000000
+      internalID: -2932545961805661710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 891
+        width: 65
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae99201bdf475f00800000000000000
+      internalID: 1105440035830341281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_18
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 937
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e66fa4d4e1205c0800000000000000
+      internalID: -4250801780965347806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 934
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbfd8c6921baf4e0800000000000000
+      internalID: -1947049097411298377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 909
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3666b2b95af3b29b0800000000000000
+      internalID: -5103915772188858781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 922
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1839ab5f3d922cc80800000000000000
+      internalID: -8304028772580289663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 917
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd8a4b2c38463c70800000000000000
+      internalID: 8950420732706983384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_23
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 910
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1057333437ef2930800000000000000
+      internalID: 4120766395450871835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_24
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 917
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9267571053fa4b50800000000000000
+      internalID: 6578337731042566813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_25
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 902
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9067e9c9eca1910800000000000000
+      internalID: 1808985372411431340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_26
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 921
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fc14773fe1cb940800000000000000
+      internalID: 5313155691417030405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_27
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 925
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15116886635c669b0800000000000000
+      internalID: -5087161891595873967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 915
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8777c1b561a0d300800000000000000
+      internalID: 274897035416008590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_29
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 890
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93ddbee94d8cd750800000000000000
+      internalID: 6331090524853621663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 902
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e725d56a0519ea0800000000000000
+      internalID: -5867820164026565022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 910
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f938517c9c5cc80800000000000000
+      internalID: -8303008481091018886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_32
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 890
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a4fc8f1a75a4c10800000000000000
+      internalID: 2038538134514256434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_33
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 908
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db750071e009c5a0800000000000000
+      internalID: -6500663618885551144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_34
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 896
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb319b03721bb6f0800000000000000
+      internalID: -667919834409780304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_35
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 889
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276024d14983595b0800000000000000
+      internalID: -5362317572517525902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_36
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 912
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc7890853b006cd0800000000000000
+      internalID: -2567039463182533387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_37
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 907
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d608b78941088730800000000000000
+      internalID: 4001449684239910612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_38
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 891
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f35e184006fb270800000000000000
+      internalID: 8268433013350940419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_39
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 881
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87b10b4ce2cc96f0800000000000000
+      internalID: -676451523885942899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_40
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 900
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45876f8cf2bba35c0800000000000000
+      internalID: -4234866685679077292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_41
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 896
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f08e4bc1498bc80800000000000000
+      internalID: -8306726661669777568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 170
+        width: 319
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbbfd0558867c330800000000000000
+      internalID: 3731065738096524239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_43
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 881
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7d7858c2b40f510800000000000000
+      internalID: 1580846123797960632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_44
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 878
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6318a5da7d807f0e0800000000000000
+      internalID: -2236308967546781386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 879
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a178eeba0104c4c0800000000000000
+      internalID: -4268285401176182360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 884
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfb0af2485fc1180800000000000000
+      internalID: -9143163195385397328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_47
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 868
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249fc889eb1333cc0800000000000000
+      internalID: -3732584971487086270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_48
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 829
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d51711fe37f6820800000000000000
+      internalID: 2913674954559020358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_49
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 810
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2aadc8f9f0bd6e30800000000000000
+      internalID: 4498446190480566828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_50
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 796
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a14ac0ffe33b0b0800000000000000
+      internalID: -5714154237053363566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 795
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e755ea0780f40d0800000000000000
+      internalID: -3436518710606201202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_52
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 802
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5e8eecf21087980800000000000000
+      internalID: -8541075388461685307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_53
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 759
+        width: 7
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be29689561140170800000000000000
+      internalID: 8143653154239098550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_54
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 785
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b355e4aefb24e30800000000000000
+      internalID: 4486359191871896367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_55
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 754
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a3c12019ef5b140800000000000000
+      internalID: 4734970482009061985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_56
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 782
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072b00e508eeb8ef0800000000000000
+      internalID: -104727931212746128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_57
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 744
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad46988a153285700800000000000000
+      internalID: 529211789842932954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_58
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 724
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc924da4d2fd950c0800000000000000
+      internalID: -4586389359878198836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_59
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 674
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc75c3ad573b1280800000000000000
+      internalID: -9071596149088617279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_60
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 636
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b290df37a9269050800000000000000
+      internalID: 5806874567847744179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_61
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 698
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6747fcd1f63b8680800000000000000
+      internalID: -8751841038442215573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_62
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 663
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e21fb1dbb6327cd0800000000000000
+      internalID: -2561925057714646300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_63
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 677
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f5f5fab7af47000800000000000000
+      internalID: 32926506428620627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_64
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 615
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5a9f2a6a43eece0800000000000000
+      internalID: -1374102945997937167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_65
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 646
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202cb1347783c4960800000000000000
+      internalID: 7587501557090599426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_66
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 628
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7313a53eb095d6140800000000000000
+      internalID: 4714522292520628535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_67
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 650
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612e70bb1b4278170800000000000000
+      internalID: 8180547593907462678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_68
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 613
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e152c1f7d0574e20800000000000000
+      internalID: 3334722937495376357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_69
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 601
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bd2ad90da397410800000000000000
+      internalID: 1475275020612852515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move03_70
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 563
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1d3d31c45b73240800000000000000
+      internalID: 4771481668577120747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Move03_0: 4359955264391611208
+      Move03_1: 4511562117573306133
+      Move03_10: 331229703819611393
+      Move03_11: 4132971728162533141
+      Move03_12: -8926526717782758919
+      Move03_13: -7660135536690130684
+      Move03_14: -6211697030890985651
+      Move03_15: -449296352519711603
+      Move03_16: -2932545961805661710
+      Move03_17: 1105440035830341281
+      Move03_18: -4250801780965347806
+      Move03_19: -1947049097411298377
+      Move03_2: -401563134699239784
+      Move03_20: -5103915772188858781
+      Move03_21: -8304028772580289663
+      Move03_22: 8950420732706983384
+      Move03_23: 4120766395450871835
+      Move03_24: 6578337731042566813
+      Move03_25: 1808985372411431340
+      Move03_26: 5313155691417030405
+      Move03_27: -5087161891595873967
+      Move03_28: 274897035416008590
+      Move03_29: 6331090524853621663
+      Move03_3: 6517627124729063893
+      Move03_30: -5867820164026565022
+      Move03_31: -8303008481091018886
+      Move03_32: 2038538134514256434
+      Move03_33: -6500663618885551144
+      Move03_34: -667919834409780304
+      Move03_35: -5362317572517525902
+      Move03_36: -2567039463182533387
+      Move03_37: 4001449684239910612
+      Move03_38: 8268433013350940419
+      Move03_39: -676451523885942899
+      Move03_4: 4033560842554181292
+      Move03_40: -4234866685679077292
+      Move03_41: -8306726661669777568
+      Move03_42: 3731065738096524239
+      Move03_43: 1580846123797960632
+      Move03_44: -2236308967546781386
+      Move03_45: -4268285401176182360
+      Move03_46: -9143163195385397328
+      Move03_47: -3732584971487086270
+      Move03_48: 2913674954559020358
+      Move03_49: 4498446190480566828
+      Move03_5: 4860293958627628070
+      Move03_50: -5714154237053363566
+      Move03_51: -3436518710606201202
+      Move03_52: -8541075388461685307
+      Move03_53: 8143653154239098550
+      Move03_54: 4486359191871896367
+      Move03_55: 4734970482009061985
+      Move03_56: -104727931212746128
+      Move03_57: 529211789842932954
+      Move03_58: -4586389359878198836
+      Move03_59: -9071596149088617279
+      Move03_6: -7074752836375079098
+      Move03_60: 5806874567847744179
+      Move03_61: -8751841038442215573
+      Move03_62: -2561925057714646300
+      Move03_63: 32926506428620627
+      Move03_64: -1374102945997937167
+      Move03_65: 7587501557090599426
+      Move03_66: 4714522292520628535
+      Move03_67: 8180547593907462678
+      Move03_68: 3334722937495376357
+      Move03_69: 1475275020612852515
+      Move03_7: 6225457650167662819
+      Move03_70: 4771481668577120747
+      Move03_8: 2877832991322409545
+      Move03_9: 6611973203836898500
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
