@@ -19,14 +19,19 @@ public class CanvasBehavior : MonoBehaviour
 // Update is called once per frame
     void FixedUpdate()
     {
-        currentFrame++;
-        if (currentFrame > 1000 && needToShake)
+        currentFrame++; 
+        if (currentFrame > 1000 && needToShake) //Value = 1000
         {
             Debug.Log("SHAKE");
             levelRotation.willRotate = false;
             characterController.stateCameraRotation = 5;
             needToShake = false;
             Destroy(gameObject);
+        }
+        else
+        {
+            characterController.rb.linearVelocityY = 0f;
+            characterController.rb.linearVelocityX = 0f;
         }
     }
 }

@@ -35,7 +35,7 @@ public class CharacterController0_1 : MonoBehaviour
 
 
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     Animator charachterAnimator;
     SpriteRenderer spriteRenderer;
 
