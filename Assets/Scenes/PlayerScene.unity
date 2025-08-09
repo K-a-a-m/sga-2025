@@ -6654,7 +6654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 414165979757555833}
   levelRotation: {fileID: 414165979757555834}
-  waitForeShake: 1
+  waitForeShake: 1000
 --- !u!4 &525747598
 Transform:
   m_ObjectHideFlags: 0
