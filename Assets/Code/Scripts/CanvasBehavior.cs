@@ -6,6 +6,7 @@ public class CanvasBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private CharacterController0_1 characterController;
     [SerializeField] private LevelRotation levelRotation;
+    [SerializeField] private int waitForeShake = 1000;
     private int currentFrame = 0;
     private bool needToShake = true;
     void Start()
@@ -20,7 +21,7 @@ public class CanvasBehavior : MonoBehaviour
     void FixedUpdate()
     {
         currentFrame++; 
-        if (currentFrame > 1000 && needToShake) //Value = 1000
+        if (currentFrame > waitForeShake && needToShake) //Value = 1000
         {
             Debug.Log("SHAKE");
             levelRotation.willRotate = false;

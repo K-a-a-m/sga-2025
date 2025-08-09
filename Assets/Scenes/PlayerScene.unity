@@ -6325,10 +6325,10 @@ MonoBehaviour:
   m_text: "Dans un pays lointain, au fin fond d\u2019une for\xEAt enchant\xE9e, habitent
     un jeune peintre nomm\xE9 Milo et son \xE9cureuil de compagnie appel\xE9 Albert.\nCe
     jeune homme cache un secret important, c\u2019est un apprenti magicien.\nIl vit
-    dans une petite maisonnette campagnarde entour\xE9 de voisins particuliers. \nCe
-    sont toutes des cr\xE9atures fantastiques, principalement des farfadets et des
-    f\xE9es.\n\nUn jour, un farfadet malicieux s\u2019introduit dans leur maison
-    et jette un sortil\xE8ge \xE0 Albert l\u2019\xE9cureuil.\nAlbert est d\xE9sormais
+    dans une petite maisonnette campagnarde entour\xE9e de voisins particuliers.
+    \nCe sont toutes des cr\xE9atures fantastiques, principalement des farfadets
+    et des f\xE9es.\n\nUn jour, un farfadet malicieux s\u2019introduit dans leur
+    maison et jette un sortil\xE8ge \xE0 Albert l\u2019\xE9cureuil.\nAlbert est d\xE9sormais
     emprisonn\xE9 dans une toile. \nMais le petit farfadet ne s\u2019est point arr\xEAt\xE9
     l\xE0.\nIl a cach\xE9 toutes les couleurs n\xE9cessaires pour reconstituer la
     peinture de la toile.\nMilo s\u2019introduit par un sort dans la toile pour r\xE9cup\xE9rer
@@ -6654,6 +6654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 414165979757555833}
   levelRotation: {fileID: 414165979757555834}
+  waitForeShake: 1
 --- !u!4 &525747598
 Transform:
   m_ObjectHideFlags: 0
@@ -7588,7 +7589,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: 9ab906a9ab944b049b9d9e00fe9cf24b, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!82 &1136968876
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7737,7 +7738,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 15
+  m_Radius: 30
 --- !u!1001 &1183856112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7881,7 +7882,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: 143b890c7750fc8489747686ef7b3b65, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!82 &1204245691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8198,7 +8199,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 14
+  m_Radius: 30
 --- !u!114 &1206862320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8216,7 +8217,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: 353f593be3f142249aeec19707c800d1, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!1 &1229849101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9734,7 +9735,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: 67a495f7a0e7e9b4aab82692a3b93134, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!82 &1752399668
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9883,7 +9884,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 10
+  m_Radius: 30
 --- !u!1 &1810927020
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,7 +9921,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: 2422afd87368e9c448577ddffb8451c4, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!82 &1810927022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10069,7 +10070,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 15
+  m_Radius: 30
 --- !u!1 &1820234632
 GameObject:
   m_ObjectHideFlags: 0
@@ -10584,7 +10585,7 @@ MonoBehaviour:
   audioClipNarrator: {fileID: 8300000, guid: c1c4f077614451f49a2dcd9d1980e49d, type: 3}
   audioManager: {fileID: 1449528748}
   hasEnter: 0
-  radiusTrigger: 15
+  radiusTrigger: 30
 --- !u!82 &2000791000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10733,7 +10734,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 15
+  m_Radius: 30
 --- !u!1001 &2026431835
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class OrbesControl : MonoBehaviour
@@ -24,8 +25,15 @@ public class OrbesControl : MonoBehaviour
             orbParent.ChangeAudioClip();
             
             Destroy(gameObject);
-            orbParentGO.SetActive(false);
+            //orbParentGO.SetActive(false);
+            StartCoroutine(DisableOrbParent());
         }
 
+    }
+
+    IEnumerator DisableOrbParent()
+    {
+        yield return new WaitForSeconds(4.5f);
+        orbParentGO.SetActive(false);
     }
 }

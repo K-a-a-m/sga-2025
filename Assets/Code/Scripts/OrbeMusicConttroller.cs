@@ -55,7 +55,11 @@ public class OrbeMusicConttroller : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.clip = audioClipNarrator;
-        audioSource.loop = false;
+        
+        audioSource.volume = 1f;
         audioSource.Play();
+        audioSource.loop = false;
+        
+        Debug.Log("CHANGE AUDIO CLIP");
     }
 }
