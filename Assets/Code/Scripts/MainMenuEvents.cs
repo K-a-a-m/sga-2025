@@ -9,7 +9,7 @@ public class MainMenuEvents : MonoBehaviour
     public void StartGame(int sceneNumber)
     {
         Debug.Log("START GAME");
-        SceneManager.LoadScene(sceneNumber);
+        SceneManager.LoadScene("PlayerScene");
     }
 
     public void ShowCredits()
@@ -22,5 +22,11 @@ public class MainMenuEvents : MonoBehaviour
     {
         Debug.Log("QUIT GAME");
         Application.Quit();
+    }
+
+    public void MainMenu()
+    {
+        Debug.Log("MAIN MENU");
+        SceneManager.LoadScene("TitleScreen");
     }
 }

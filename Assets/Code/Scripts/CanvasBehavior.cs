@@ -27,6 +27,7 @@ public class CanvasBehavior : MonoBehaviour
             characterController.stateCameraRotation = 5;
             needToShake = false;
             Destroy(gameObject);
+            
         }
         else
         {

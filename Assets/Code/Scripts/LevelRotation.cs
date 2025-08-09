@@ -135,6 +135,7 @@ public class LevelRotation : MonoBehaviour
                 {
                     characterController.stateCameraRotation = 1;
                     willRotate = true; 
+                    characterController.nbJumpsLeft = 2;
 
                 }
             }
@@ -147,6 +148,7 @@ public class LevelRotation : MonoBehaviour
                 audioSource.PlayOneShot(shakeSFX);
             }
             characterController.nbJumpsLeft = 0;
+            
             if (startTransitionDOWN)
             {
                 startTransitionDOWN = false;

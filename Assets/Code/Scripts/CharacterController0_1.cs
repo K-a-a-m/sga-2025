@@ -73,9 +73,10 @@ public class CharacterController0_1 : MonoBehaviour
         if((groundLayer.value & (1 << other.gameObject.layer)) !=0)
         {
             nbJumpsLeft = 2;
+            Debug.Log("RESET");
         } 
 
-        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)//Mort du player et déclenchement du respawn
+        if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)//Mort du player et dï¿½clenchement du respawn
         {
             this.transform.position = respawnPos;
             this.transform.rotation = respawnRot;
@@ -93,13 +94,12 @@ public class CharacterController0_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
+        
         charachterAnimator.SetFloat(name: "speedY", rb.linearVelocityY);
         charachterAnimator.SetFloat(name: "absSpeedX", Mathf.Abs(rb.linearVelocityX));
         charachterAnimator.SetBool(name: "isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
-
+        Debug.Log("stateCameraRotation : " + stateCameraRotation);
         if (stateCameraRotation == 3)
         {
             MoveCharacter(-1);
@@ -114,7 +114,7 @@ public class CharacterController0_1 : MonoBehaviour
             spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         }
 
-        if (orbesNumber == targetOrbes)//changer cette valeur avec nombre placée dans scene
+        if (orbesNumber == targetOrbes)//changer cette valeur avec nombre placï¿½e dans scene
         {
             pinceauGoal.SetActive(true);
         }
@@ -132,8 +132,8 @@ public class CharacterController0_1 : MonoBehaviour
 
     private void JumpCharacter(int jumpDir)
     {
-        
 
+        //Debug.Log("nbJumpsLeft : " + nbJumpsLeft);
         if (jumpAction.WasPressedThisFrame() && nbJumpsLeft > 0)
         {
 
@@ -144,7 +144,7 @@ public class CharacterController0_1 : MonoBehaviour
             nbJumpsLeft--;
 
             audioSource.PlayOneShot(JumpSFX);
-
+         //   Debug.Log("rb.linearVelocityY  JUMP: " + rb.linearVelocityY );
         }
         
     }

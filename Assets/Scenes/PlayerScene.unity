@@ -11324,6 +11324,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1944310025}
     - target: {fileID: 8290628540972281359, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
+      propertyPath: nbJumpsLeft
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290628540972281359, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
       propertyPath: pinceauGoal
       value: 
       objectReference: {fileID: 359048906}
