@@ -15,11 +15,12 @@ public class MainMenuEvents : MonoBehaviour
     public void ShowCredits()
     {
         Debug.Log("SHOW CREDITS");
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame()
     {
         Debug.Log("QUIT GAME");
-        //Application.Quit();
+        Application.Quit();
     }
 }
