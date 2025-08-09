@@ -5273,11 +5273,21 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -9, y: 99, z: 0}
+  - first: {x: -10, y: 99, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -9, y: 99, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 3
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -5725,7 +5735,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 85
     m_Data: {fileID: 11400000, guid: 09491446356b00549b1377324e5e9380, type: 2}
-  - m_RefCount: 363
+  - m_RefCount: 364
     m_Data: {fileID: 11400000, guid: 5235394573b36ec47ac16aeeba6f736a, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -5734,7 +5744,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 363
+  - m_RefCount: 364
     m_Data: {fileID: 1079172111, guid: 3f435c8f606e2ad48accd8b44d95a7c3, type: 3}
   - m_RefCount: 85
     m_Data: {fileID: -363590274, guid: 3f435c8f606e2ad48accd8b44d95a7c3, type: 3}
@@ -5795,7 +5805,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 0
-  - m_RefCount: 534
+  - m_RefCount: 535
     m_Data:
       e00: 1
       e01: 0
@@ -5824,7 +5834,7 @@ Tilemap:
     m_Data: {r: 6.4177e-41, g: 6.4177e-41, b: 6.4177e-41, a: 6.4177e-41}
   - m_RefCount: 0
     m_Data: {r: 6.4177e-41, g: 6.4177e-41, b: 6.4177e-41, a: 6.4177e-41}
-  - m_RefCount: 534
+  - m_RefCount: 535
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -6762,7 +6772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.7490196, b: 0.39215687, a: 1}
+  m_Color: {r: 0.17466182, g: 0.23584908, b: 0.19505757, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7941,7 +7951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8000001, g: 0.7490196, b: 0.38823533, a: 1}
+  m_Color: {r: 0.1764706, g: 0.23921569, b: 0.19215687, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9012,11 +9022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4794132064676861202, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 4794132064676861202, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 97
+      value: 98.19
       objectReference: {fileID: 0}
     - target: {fileID: 4794132064676861202, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: m_LocalPosition.z
