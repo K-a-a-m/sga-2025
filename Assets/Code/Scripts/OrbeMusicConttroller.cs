@@ -10,6 +10,7 @@ public class OrbeMusicConttroller : MonoBehaviour
     private Collider2D colliderTrigger;
     [SerializeField] private AudioManager audioManager;
     public bool hasEnter = false;
+    [SerializeField] private int radiusTrigger = 15;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +23,7 @@ public class OrbeMusicConttroller : MonoBehaviour
     {
         if (hasEnter)
         {
-            float distanceVolOrb = (15 - (Vector2.Distance( player.transform.position ,transform.position))) / 15;
+            float distanceVolOrb = (radiusTrigger - (Vector2.Distance( player.transform.position ,transform.position))) / radiusTrigger;
             audioSource.volume = distanceVolOrb; 
             audioManager.ASource.volume = (1 - distanceVolOrb) * 0.8f;
         }

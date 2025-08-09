@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class DialogManagerEnd : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogTextEnd;
     [SerializeField] GameObject dialogContainerPanel;
     [SerializeField] TextMeshProUGUI speakerText;
-
+    [SerializeField] private GameObject butterflies;
+    [SerializeField] private GameObject canvasBack;
     int dialogIndex = 0;
     public int currentDialog = 1;
 
@@ -63,6 +65,9 @@ public class DialogManagerEnd : MonoBehaviour
                         dialogContainerPanel.SetActive(false);
                         dialogIndex = 0;
                         currentDialog++;
+                        butterflies.SetActive(true);
+                        canvasBack.SetActive(true);
+                        
                     }
                     break;
             default:
@@ -75,5 +80,10 @@ public class DialogManagerEnd : MonoBehaviour
             }   
             speakerText.text = speaker;
         }
+    }
+
+    public void OnClickBackButton()
+    {
+        SceneManager.LoadScene("Credit");
     }
 }

@@ -15,7 +15,7 @@ public class MainMenuEvents : MonoBehaviour
     public void ShowCredits()
     {
         Debug.Log("SHOW CREDITS");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Credit");
     }
 
     public void QuitGame()
