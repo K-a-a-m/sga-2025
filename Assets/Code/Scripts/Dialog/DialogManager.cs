@@ -19,10 +19,10 @@ public class DialogManager : MonoBehaviour
     List<Tuple<string, string>> dialogWesh = new List<Tuple<string, string>>()
     {
         //new Tuple<string,string> ("Wesh, c�est quoi ce bordel !?", "Milo"),
-        new Tuple<string,string> ("Oh non, j�ai encore rat�. J�en ai marre !", "Milo"),
-        new Tuple<string,string> ("Et il est o� mon pinceau magique ! Non, mais s�rieux !!!", "Milo"),
-        new Tuple<string,string> ("Bon, au point o� on en est, autant il y aller comme �a.", "Milo"),
-        new Tuple<string,string> ("Let�s go !", "Milo")
+        new Tuple<string,string> ("Oh non, j'ai encore raté. J'en ai marre !", "Milo"),
+        new Tuple<string,string> ("Et il est où mon pinceau magique ! Non, mais sérieux !!!", "Milo"),
+        new Tuple<string,string> ("Bon, au point où on en est, autant il y aller comme ça.", "Milo"),
+        new Tuple<string,string> ("Let's go !", "Milo")
     };
 
     InputAction nextDialog;
