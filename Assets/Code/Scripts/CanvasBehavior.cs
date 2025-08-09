@@ -20,7 +20,7 @@ public class CanvasBehavior : MonoBehaviour
     void FixedUpdate()
     {
         currentFrame++; 
-        if (currentFrame > 1 && needToShake) //Value = 1000
+        if (currentFrame > 1000 && needToShake) //Value = 1000
         {
             Debug.Log("SHAKE");
             levelRotation.willRotate = false;

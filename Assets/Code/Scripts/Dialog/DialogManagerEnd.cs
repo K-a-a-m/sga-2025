@@ -17,7 +17,7 @@ public class DialogManagerEnd : MonoBehaviour
 
         List<Tuple<string, string>> dialogFin = new List<Tuple<string, string>>()
         {
-        new Tuple<string,string> ("Super, j�ai retrouv� mon pinceau magique.", "Milo"),
+        //new Tuple<string,string> ("Super, j�ai retrouv� mon pinceau magique.", "Milo"),
         new Tuple<string,string> ("Par les pouvoirs qui me sont conf�r�s, je veux que tu restaures le tableau o� m�on �cureuil Albert est enferm� et que tu le lib�res !", "Milo"),
         new Tuple<string,string> ("Je suis trop content de te revoir, mon petit Albert !", "Milo"),
         new Tuple<string,string> ("Attends, QUOI?", "Milo"),
