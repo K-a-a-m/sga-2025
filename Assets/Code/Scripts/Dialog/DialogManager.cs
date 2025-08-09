@@ -13,6 +13,7 @@ public class DialogManager : MonoBehaviour
     int dialogIndex = 0;
     public int currentDialog = 1;
 
+
         List<Tuple<string, string>> dialogFin = new List<Tuple<string, string>>()
         {
         new Tuple<string,string> ("Super, j�ai retrouv� mon pinceau magique.", "Milo"),
@@ -58,7 +59,7 @@ public class DialogManager : MonoBehaviour
             dialogContainerPanel.SetActive(true);
             switch(currentDialog)
             {
-                case 1: 
+                case 1:
                     if (dialogIndex < dialogWesh.Count)
                     {
                         dialogTextEnd.text = dialogWesh[dialogIndex].Item1;

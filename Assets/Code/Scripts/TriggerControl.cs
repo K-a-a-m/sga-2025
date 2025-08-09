@@ -10,6 +10,8 @@ public class TriggerControl : MonoBehaviour
     {
         characterController = playerController.GetComponent<CharacterController0_1>();
         colliderTrigger = GetComponent<Collider2D>();
+        GetComponent<Renderer>().enabled = false;
+
     }
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {

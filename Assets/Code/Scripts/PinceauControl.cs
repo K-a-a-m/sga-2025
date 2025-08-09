@@ -15,7 +15,7 @@ public class PinceauControl : MonoBehaviour
     {
         if (colliderTrigger.tag == "Player" && hasDetect)
         {
-            //SceneManager.LoadScene(sceneName);
+            //SceneManager.LoadScene(2);
             hasDetect = false;
             dialogManager.currentDialog = 2;
         }
