@@ -820,8 +820,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9dits externes\nDesign : macrovector / Freepik\nSon : ErickBloem_200250,
-    Soundud3 et BabelFishTank (Freesound.org)"
+  m_text: "Cr\xE9dits externes\nImage finale inspir\xE9e de : macrovector / Freepik\nSons
+    utilis\xE9s : ErickBloem_200250, Soundud3 et BabelFishTank (Freesound.org)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1370,9 +1370,9 @@ RectTransform:
   m_Father: {fileID: 268520681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -713, y: -8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMax: {x: 0.5, y: 0.65652835}
+  m_AnchoredPosition: {x: -713, y: -86}
+  m_SizeDelta: {x: 200, y: -106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1528970395
 MonoBehaviour:
@@ -1396,8 +1396,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xC9quipe de d\xE9veloppement\nNarrative designer : Zo\xE9\nProgrammeur
     :\nThomas, support\xE9 par Micha\xEBl\nGame designer : Regis\nSound designer
-    : Yann\nGame artist : \nPaula, soutenu par Anais\nSoutenu par tout les membres
-    du staff de la Swiss Game Academy"
+    : Yann\nGame artist : \nPaula, soutenue par Anais\n\nL'\xE9quipe a \xE9t\xE9
+    fortement soutenue par le staff de la SGA 2025"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
