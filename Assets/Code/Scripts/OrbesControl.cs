@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 
@@ -8,9 +9,9 @@ public class OrbesControl : MonoBehaviour
     [SerializeField] private  OrbeMusicConttroller orbParent;
     [SerializeField] private GameObject orbParentGO;
     [SerializeField] private GameObject orbUI;
-
+    [SerializeField] private SpriteRenderer orbSprite;
     private Vector3 amount = new Vector3(.5f, .5f, .5f);
-
+    private float orbTransparancy = .3f;
 
     private float time = 1.5f;
     private Collider2D colliderTrigger;
@@ -30,23 +31,24 @@ public class OrbesControl : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {
-        if (colliderTrigger.tag == "Player" && hasDetect)
+        if (colliderTrigger.CompareTag("Player"))
         {
+            characterController.checkPoint = true;
+            if (!hasDetect) return;
             hasDetect = false;
             characterController.orbesNumber++;
-            characterController.checkPoint = true;
+
             orbParent.ChangeAudioClip();
             orbUI.SetActive(true);
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            Color spriteColor = orbSprite.color;
+            spriteColor.a = orbTransparancy;
+            orbSprite.color = spriteColor;
             //orbParentGO.SetActive(false);
-            StartCoroutine(DisableOrbParent());
+            //StartCoroutine(DisableOrbParent());
         }
 
     }
 
-    IEnumerator DisableOrbParent()
-    {
-        yield return new WaitForSeconds(4.5f);
-        orbParentGO.SetActive(false);
-    }
+    
 }

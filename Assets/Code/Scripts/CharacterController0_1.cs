@@ -73,7 +73,7 @@ public class CharacterController0_1 : MonoBehaviour
         if((groundLayer.value & (1 << other.gameObject.layer)) !=0)
         {
             nbJumpsLeft = 2;
-            Debug.Log("RESET");
+            
         } 
 
         if ((outOfPlayLayer.value & (1 << other.gameObject.layer)) != 0)//Mort du player et d�clenchement du respawn
@@ -99,7 +99,7 @@ public class CharacterController0_1 : MonoBehaviour
         charachterAnimator.SetFloat(name: "absSpeedX", Mathf.Abs(rb.linearVelocityX));
         charachterAnimator.SetBool(name: "isGrounded", groundCollider.IsTouchingLayers(groundLayer));
 
-        Debug.Log("stateCameraRotation : " + stateCameraRotation);
+       // Debug.Log("stateCameraRotation : " + stateCameraRotation);
         if (stateCameraRotation == 3)
         {
             MoveCharacter(-1);

@@ -5,7 +5,7 @@ public class TriggerControl : MonoBehaviour
     [SerializeField] private GameObject playerController;
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
-
+    [SerializeField] private bool disabledAfterTrigger = true;
     private void Start()
     {
         characterController = playerController.GetComponent<CharacterController0_1>();
@@ -25,7 +25,7 @@ public class TriggerControl : MonoBehaviour
             {
                 characterController.stateCameraRotation = 6;
             }
-            gameObject.SetActive(false);
+            gameObject.SetActive(!disabledAfterTrigger);
         }
 
     }

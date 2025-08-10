@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7039600776054321845}
   m_Layer: 0
   m_Name: Trigger
-  m_TagString: Untagged
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
+  disabledAfterTrigger: 1
 --- !u!82 &7039600776054321845
 AudioSource:
   m_ObjectHideFlags: 0
