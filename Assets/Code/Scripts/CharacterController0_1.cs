@@ -153,7 +153,7 @@ public class CharacterController0_1 : MonoBehaviour
             rb.AddForceY(jumpDir * jumpForce * 50);
 
             nbJumpsLeft--;
-            audioSource.volume = .5f;
+            audioSource.volume = .3f;
             audioSource.PlayOneShot(JumpSFX);
          //   Debug.Log("rb.linearVelocityY  JUMP: " + rb.linearVelocityY );
         }

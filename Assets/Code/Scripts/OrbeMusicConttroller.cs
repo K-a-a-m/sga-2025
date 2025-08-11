@@ -78,7 +78,7 @@ public class OrbeMusicConttroller : MonoBehaviour
         yield return new WaitForSeconds(4f);
         while (audioManager.ASource.volume <= volumeMax)
         {
-            audioManager.ASource.volume += 0.1f;
+            audioManager.ASource.volume += 0.05f;
             yield return new WaitForSeconds(0.2f);
         }
          
