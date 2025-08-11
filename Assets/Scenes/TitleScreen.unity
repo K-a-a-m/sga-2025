@@ -889,10 +889,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voix narrateur : Adrien\nNarrative designer : Zo\xE9\nProgrammeur :\nThomas,
-    support\xE9 par Micha\xEBl\nGame designer : Regis\nSound designer : Yann\nGame
-    artist : \nPaula, soutenue par Anais\n\nL'\xE9quipe a \xE9t\xE9 fortement soutenue
-    par le staff de la SGA 2025"
+  m_text: "Voix narrateur : Adrien\n\nNarrative designer : Zo\xE9\nMoral Support
+    Dog: Sparrow\n\nProgrammeur : Thomas, support\xE9 par Micha\xEBl\n\nGame designer
+    : Regis\n\nSound designer : Yann\n\nGame artist : Paula, soutenue par Anais\n\nL'\xE9quipe
+    a \xE9t\xE9 fortement soutenue par le staff de la SGA 2025"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -2.258606, z: -366.00116, w: -326.84738}
+  m_margin: {x: -75.62897, y: -115.35733, z: -371.3056, w: -354.15784}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1780,7 +1780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1616817617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 2.2584229, y: 0, z: -389.05807, w: -173.90967}
+  m_margin: {x: 2.2584229, y: -121.109985, z: -389.05807, w: -62.619568}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2473,7 +2473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2028339688
 RectTransform:
   m_ObjectHideFlags: 0
