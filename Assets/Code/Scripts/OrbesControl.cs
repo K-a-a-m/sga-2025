@@ -10,9 +10,9 @@ public class OrbesControl : MonoBehaviour
     [SerializeField] private GameObject orbParentGO;
     [SerializeField] private GameObject orbUI;
     [SerializeField] private SpriteRenderer orbSprite;
-    private Vector3 amount = new Vector3(.5f, .5f, .5f);
+    
     private float orbTransparancy = .3f;
-
+    private Vector3 amount = new Vector3(.5f, .5f, .5f);
     private float time = 1.5f;
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
@@ -28,6 +28,7 @@ public class OrbesControl : MonoBehaviour
             "time", randomTime,
             "looptype", iTween.LoopType.loop
         ));
+        
     }
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {
@@ -39,11 +40,14 @@ public class OrbesControl : MonoBehaviour
             characterController.orbesNumber++;
 
             orbParent.ChangeAudioClip();
-            orbUI.SetActive(true);
+            
             //Destroy(gameObject);
+            iTween.Stop(gameObject);
             Color spriteColor = orbSprite.color;
             spriteColor.a = orbTransparancy;
             orbSprite.color = spriteColor;
+            orbUI.SetActive(true);
+            iTween.ScaleTo(orbUI,iTween.Hash("x", 1, "y", 1, "time", 1.2f));
             //orbParentGO.SetActive(false);
             //StartCoroutine(DisableOrbParent());
         }
