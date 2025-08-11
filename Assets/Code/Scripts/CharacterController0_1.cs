@@ -21,6 +21,7 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private AudioClip JumpSFX;
     [SerializeField] private AudioClip OrbeSFX;
     [SerializeField] private AudioClip MarcheSFX;
+    [SerializeField] private PhysicsMaterial2D playerMaterial;
     // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
@@ -44,10 +45,11 @@ public class CharacterController0_1 : MonoBehaviour
     private InputAction jumpAction;
 
     private InputAction interactionAction;
-
+    private bool isGrounded = false;
     public int nbJumpsLeft = 0;
     public bool checkPoint = false;
-
+    private Vector2 moveDirection;
+    private bool isFacingRight = false;
     TriggerControl[] controllers;
 
 
@@ -67,6 +69,7 @@ public class CharacterController0_1 : MonoBehaviour
         respawnState = stateCameraRotation;
         audioSource = GetComponent<AudioSource>();
         controllers = GameObject.FindObjectsByType<TriggerControl>(FindObjectsSortMode.None);
+        isGrounded = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -94,26 +97,34 @@ public class CharacterController0_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        isGrounded = groundCollider.IsTouchingLayers(groundLayer);
         charachterAnimator.SetFloat(name: "speedY", rb.linearVelocityY);
         charachterAnimator.SetFloat(name: "absSpeedX", Mathf.Abs(rb.linearVelocityX));
-        charachterAnimator.SetBool(name: "isGrounded", groundCollider.IsTouchingLayers(groundLayer));
-
+        charachterAnimator.SetBool(name: "isGrounded", isGrounded);
+        if (isGrounded)
+        {
+            playerMaterial.friction = .2f;
+        }
+        else
+        {
+            playerMaterial.friction = 0f;
+        }
        // Debug.Log("stateCameraRotation : " + stateCameraRotation);
         if (stateCameraRotation == 3)
         {
             MoveCharacter(-1);
             JumpCharacter(-1);
-            spriteRenderer.flipX = rb.linearVelocityX > -0.1;
+            //spriteRenderer.flipX = rb.linearVelocityX > -0.1;
 
         }
         else if (stateCameraRotation == 1)
         {
             MoveCharacter(1);
             JumpCharacter(1);
-            spriteRenderer.flipX = rb.linearVelocityX < -0.1;
+            //spriteRenderer.flipX = rb.linearVelocityX < -0.1;
         }
 
+        FlipCharacter();
         if (orbesNumber == targetOrbes)//changer cette valeur avec nombre plac�e dans scene
         {
             pinceauGoal.SetActive(true);
@@ -142,7 +153,7 @@ public class CharacterController0_1 : MonoBehaviour
             rb.AddForceY(jumpDir * jumpForce * 50);
 
             nbJumpsLeft--;
-
+            audioSource.volume = .5f;
             audioSource.PlayOneShot(JumpSFX);
          //   Debug.Log("rb.linearVelocityY  JUMP: " + rb.linearVelocityY );
         }
@@ -151,14 +162,25 @@ public class CharacterController0_1 : MonoBehaviour
 
     private void MoveCharacter(int moveDir)
     {
-        Vector2 move = moveAction.ReadValue<Vector2>();
-        rb.linearVelocityX = moveDir * move.x * moveSpeed;
+        moveDirection = moveAction.ReadValue<Vector2>();
+        
+        rb.linearVelocityX = moveDir * moveDirection.x * moveSpeed;
+        
         if (Mathf.Abs(rb.linearVelocityX) > 0.01 && !audioSource.isPlaying)
         {
+            audioSource.volume = .8f;
             audioSource.PlayOneShot(MarcheSFX);
         }
     }
 
+    private void FlipCharacter()
+    {
+        if (isFacingRight && moveDirection.x > 0f || !isFacingRight && moveDirection.x < 0f)
+        {
+            isFacingRight = !isFacingRight;
+            spriteRenderer.flipX = isFacingRight;
+        }
+    }
 
 }
 

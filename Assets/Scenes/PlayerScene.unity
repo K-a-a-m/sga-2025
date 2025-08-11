@@ -8510,6 +8510,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!82 &1136968876
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8720,9 +8721,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290218594997869349, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
+      propertyPath: ltb
+      value: 
+      objectReference: {fileID: 682226837}
+    - target: {fileID: 6290218594997869349, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: orbUI
       value: 
       objectReference: {fileID: 1450693512}
+    - target: {fileID: 6290218594997869349, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
+      propertyPath: colorName
+      value: MAGENTA
+      objectReference: {fileID: 0}
     - target: {fileID: 6290218594997869349, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: orbParent
       value: 
@@ -8816,6 +8825,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!82 &1204245691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9151,6 +9161,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!1 &1229849101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,7 +9279,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 43fb27354cb5f434fb4f12e2c9f7eb4c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10815,6 +10826,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!82 &1752399668
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11001,6 +11013,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!82 &1810927022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11665,6 +11678,7 @@ MonoBehaviour:
   audioManager: {fileID: 1449528748}
   hasEnter: 0
   radiusTrigger: 30
+  volumeMax: 0.7
 --- !u!82 &2000791000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12464,7 +12478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2109358764705178869, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
       propertyPath: m_Volume
-      value: 0.81
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4105915584314622587, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
       propertyPath: m_SortingOrder
@@ -12498,6 +12512,10 @@ PrefabInstance:
       propertyPath: groundCollider
       value: 
       objectReference: {fileID: 97631558}
+    - target: {fileID: 8290628540972281359, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
+      propertyPath: playerMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: 0744ac4da60614b20a14fdaa45a2e1b2, type: 2}
     - target: {fileID: 8290628540972281359, guid: 2a509903eed327542a4fbf5d2d635565, type: 3}
       propertyPath: sceneBackground
       value: 

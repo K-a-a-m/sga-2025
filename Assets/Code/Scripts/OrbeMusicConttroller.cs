@@ -13,6 +13,8 @@ public class OrbeMusicConttroller : MonoBehaviour
     public bool hasEnter = false;
     private bool hasAudioChanged = false;
     [SerializeField] private int radiusTrigger = 15;
+
+    [SerializeField] private float volumeMax = 0.7f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,7 +29,7 @@ public class OrbeMusicConttroller : MonoBehaviour
         {
             float distanceVolOrb = (radiusTrigger - (Vector2.Distance( player.transform.position ,transform.position))) / radiusTrigger;
             audioSource.volume = distanceVolOrb; 
-            audioManager.ASource.volume = (1 - distanceVolOrb) * 0.8f;
+            audioManager.ASource.volume = (1 - distanceVolOrb) * volumeMax;
         }
     }
     
@@ -48,7 +50,7 @@ public class OrbeMusicConttroller : MonoBehaviour
         {
             hasEnter = false;
             audioSource.Stop();
-            audioManager.ASource.volume = 0.8f;
+            audioManager.ASource.volume = volumeMax;
             //audioManager.ASource.Play();
         }
     }
@@ -74,6 +76,11 @@ public class OrbeMusicConttroller : MonoBehaviour
     IEnumerator RaiseAudioManagerVolume()
     {
         yield return new WaitForSeconds(4f);
-        audioManager.ASource.volume = 0.8f;
+        while (audioManager.ASource.volume <= volumeMax)
+        {
+            audioManager.ASource.volume += 0.1f;
+            yield return new WaitForSeconds(0.2f);
+        }
+         
     }
 }

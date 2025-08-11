@@ -20,11 +20,15 @@ public class LatestTriggerBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            foreach (GameObject trigger in _triggers)
-            {
-                trigger.SetActive(true);
-            }    
+            ResetTriggers();   
         }
-        
+    }
+
+    public void ResetTriggers()
+    {
+        foreach (GameObject trigger in _triggers)
+        {
+            trigger.SetActive(true);
+        }   
     }
 }

@@ -10,7 +10,8 @@ public class OrbesControl : MonoBehaviour
     [SerializeField] private GameObject orbParentGO;
     [SerializeField] private GameObject orbUI;
     [SerializeField] private SpriteRenderer orbSprite;
-    
+    [SerializeField] private string colorName = "ORBCOLOR";
+    [SerializeField] private LatestTriggerBehavior ltb;
     private float orbTransparancy = .3f;
     private Vector3 amount = new Vector3(.5f, .5f, .5f);
     private float time = 1.5f;
@@ -48,6 +49,10 @@ public class OrbesControl : MonoBehaviour
             orbSprite.color = spriteColor;
             orbUI.SetActive(true);
             iTween.ScaleTo(orbUI,iTween.Hash("x", 1, "y", 1, "time", 1.2f));
+            if (colorName.ToUpper() == "MAGENTA")
+            {
+                ltb.ResetTriggers();
+            }
             //orbParentGO.SetActive(false);
             //StartCoroutine(DisableOrbParent());
         }
