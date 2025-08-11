@@ -9,7 +9,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogTextEnd;
     [SerializeField] GameObject dialogContainerPanel;
     [SerializeField] TextMeshProUGUI speakerText;
-
+    [SerializeField] CharacterController0_1 characterController;
+    [SerializeField] private GameObject keysCharacterMove;
+    [SerializeField] private GameObject palette;
     int dialogIndex = 0;
     public int currentDialog = 1;
 
@@ -56,6 +58,9 @@ public class DialogManager : MonoBehaviour
                         dialogContainerPanel.SetActive(false);
                         dialogIndex = 0;
                         currentDialog = -1;
+                        keysCharacterMove.SetActive(true);
+                        palette.SetActive(true);
+                        characterController.enabled = true;
                     }
                     break;
             default:

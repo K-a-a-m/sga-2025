@@ -23,10 +23,10 @@ public class CanvasBehavior : MonoBehaviour
         currentFrame++; 
         if (currentFrame > waitForeShake && needToShake) //Value = 1000
         {
-            Debug.Log("SHAKE");
             levelRotation.willRotate = false;
             characterController.stateCameraRotation = 5;
             needToShake = false;
+            characterController.enabled = false;
             Destroy(gameObject);
             
         }
