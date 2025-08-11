@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerScene.unity
     guid: bdef54170a73a034982854167badb4e8
   - enabled: 1
-    path: Assets/Scenes/FinalScreen.unity
-    guid: bbb4955e36bb747ddb94c026a5af1733
+    path: Assets/Scenes/FinalScreenLayered.unity
+    guid: b1d77b277d2cf4638b5e280529d735ed
   - enabled: 1
     path: Assets/Scenes/Credit.unity
     guid: 5e4e2a8739c18c448a24544e713bdff4

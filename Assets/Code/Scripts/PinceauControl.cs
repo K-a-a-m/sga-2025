@@ -22,7 +22,7 @@ public class PinceauControl : MonoBehaviour
     {
         if (colliderTrigger.tag == "Player" && hasDetect)
         {
-            SceneManager.LoadScene("FinalScreen");
+            SceneManager.LoadScene("FinalScreenLayered");
             hasDetect = false;
             dialogManager.currentDialog = 2;
         }
