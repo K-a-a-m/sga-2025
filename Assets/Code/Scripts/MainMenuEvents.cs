@@ -5,28 +5,35 @@ using UnityEngine.SceneManagement;
 public class MainMenuEvents : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    [SerializeField] private GameObject panelStartButtons;
+    [SerializeField] private GameObject panelCredits;
+    
     public void StartGame(int sceneNumber)
     {
-        Debug.Log("START GAME");
         SceneManager.LoadScene("PlayerScene");
     }
 
     public void ShowCredits()
     {
-        Debug.Log("SHOW CREDITS");
-        SceneManager.LoadScene("Credit");
+        panelStartButtons.SetActive(false);
+        panelCredits.SetActive(true);
+        DisplayCreditsStatic.DisplayCredits = true;
+    }
+
+    public void ShowMainMenuPanel()
+    {
+        panelCredits.SetActive(false);
+        panelStartButtons.SetActive(true);
+        DisplayCreditsStatic.DisplayCredits = false;
     }
 
     public void QuitGame()
     {
-        Debug.Log("QUIT GAME");
         Application.Quit();
     }
 
     public void MainMenu()
     {
-        Debug.Log("MAIN MENU");
         SceneManager.LoadScene("TitleScreen");
     }
 }

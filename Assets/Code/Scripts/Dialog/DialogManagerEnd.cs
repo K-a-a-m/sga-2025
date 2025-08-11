@@ -109,7 +109,8 @@ public class DialogManagerEnd : MonoBehaviour
 
     public void OnClickBackButton()
     {
-        SceneManager.LoadScene("Credit");
+        DisplayCreditsStatic.DisplayCredits = true;
+        SceneManager.LoadScene("TitleScreen");
     }
 
     IEnumerator RevealBackground()
