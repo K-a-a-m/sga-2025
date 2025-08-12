@@ -12406,6 +12406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1420003295}
   player: {fileID: 394995853}
+  animator: {fileID: 2004931329}
 --- !u!4 &2043896952
 Transform:
   m_ObjectHideFlags: 0
@@ -12724,7 +12725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000046208, y: 226}
+  m_AnchoredPosition: {x: -0.000046208, y: 208.7}
   m_SizeDelta: {x: 694.2, y: 293.0164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101353228
@@ -12903,6 +12904,7 @@ SceneRoots:
   - {fileID: 786056767}
   - {fileID: 414165979757555832}
   - {fileID: 2034690157}
+  - {fileID: 1420003299}
   - {fileID: 1496166478}
   - {fileID: 1206862317}
   - {fileID: 1204245692}
@@ -12912,7 +12914,6 @@ SceneRoots:
   - {fileID: 1810927023}
   - {fileID: 1546119168}
   - {fileID: 1944310024}
-  - {fileID: 1420003299}
   - {fileID: 1895368886}
   - {fileID: 2043896952}
   - {fileID: 342179380}

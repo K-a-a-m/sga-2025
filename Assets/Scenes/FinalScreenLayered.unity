@@ -5228,6 +5228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215222168}
   - component: {fileID: 215222169}
+  - component: {fileID: 215222170}
   m_Layer: 0
   m_Name: FadeController
   m_TagString: Untagged
@@ -5273,6 +5274,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &215222170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215222167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d64145fe054e4c8d9800aaf1655c96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &474520508
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,6 +5661,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4281416749
   colorYellow: {r: 0.8, g: 0.7490196, b: 0.3921569, a: 1}
+  animator: {fileID: 215222169}
   currentDialog: 1
 --- !u!4 &839105496
 Transform:
@@ -7675,7 +7689,7 @@ SceneRoots:
   - {fileID: 155538841}
   - {fileID: 1856332603}
   - {fileID: 839105496}
-  - {fileID: 133411341}
   - {fileID: 887892467}
+  - {fileID: 133411341}
   - {fileID: 2123728090}
   - {fileID: 1041897417}
