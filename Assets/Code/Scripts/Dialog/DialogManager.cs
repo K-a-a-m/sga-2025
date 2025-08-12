@@ -12,6 +12,8 @@ public class DialogManager : MonoBehaviour
     [SerializeField] CharacterController0_1 characterController;
     [SerializeField] private GameObject keysCharacterMove;
     [SerializeField] private GameObject palette;
+    [SerializeField] private Canvas menuPauseCanvas;
+    [SerializeField] private Canvas dialogsCanvas;
     int dialogIndex = 0;
     public int currentDialog = 1;
 
@@ -61,6 +63,8 @@ public class DialogManager : MonoBehaviour
                         keysCharacterMove.SetActive(true);
                         palette.SetActive(true);
                         characterController.enabled = true;
+                        dialogsCanvas.sortingOrder = 1;
+                        menuPauseCanvas.sortingOrder = 0;
                     }
                     break;
             default:

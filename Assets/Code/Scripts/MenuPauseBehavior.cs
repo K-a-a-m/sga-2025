@@ -9,6 +9,8 @@ public class MenuPauseBehavior : MonoBehaviour
     [SerializeField] GameObject canvas;
     [SerializeField] GameObject player;
     [SerializeField] Animator animator;
+    [SerializeField] private Canvas menuPauseCanvas;
+    [SerializeField] private Canvas dialogsCanvas;
     private bool isActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,14 +36,18 @@ public class MenuPauseBehavior : MonoBehaviour
         isActive = !isActive;
         canvas.SetActive(isActive);
         player.GetComponent<CharacterController0_1>().enabled = !isActive;
-        //Time.timeScale = isActive ? 0 : 1;
+        Time.timeScale = isActive ? 0 : 1;
     }
 
     public void LoadTitleScreen()
     {
+        Time.timeScale = 1;
+        
+        menuPauseCanvas.sortingOrder = 0;
+        dialogsCanvas.sortingOrder = 1;
         DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
         DisplayCreditsStatic.DisplayCredits = false;
         animator.SetTrigger("FadeOut");
-        canvas.SetActive(false);
+        //canvas.SetActive(false);
     }
 }

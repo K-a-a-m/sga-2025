@@ -6576,6 +6576,8 @@ MonoBehaviour:
   characterController: {fileID: 414165979757555833}
   keysCharacterMove: {fileID: 369418537}
   palette: {fileID: 2052906532}
+  menuPauseCanvas: {fileID: 1420003298}
+  dialogsCanvas: {fileID: 1229849104}
   currentDialog: 1
 --- !u!4 &342179380
 Transform:
@@ -9840,7 +9842,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1420003299
 RectTransform:
@@ -12407,6 +12409,8 @@ MonoBehaviour:
   canvas: {fileID: 1420003295}
   player: {fileID: 394995853}
   animator: {fileID: 2004931329}
+  menuPauseCanvas: {fileID: 1420003298}
+  dialogsCanvas: {fileID: 1229849104}
 --- !u!4 &2043896952
 Transform:
   m_ObjectHideFlags: 0
