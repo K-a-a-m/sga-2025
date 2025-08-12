@@ -63,8 +63,8 @@ public class DialogManager : MonoBehaviour
                         keysCharacterMove.SetActive(true);
                         palette.SetActive(true);
                         characterController.enabled = true;
-                        dialogsCanvas.sortingOrder = 1;
-                        menuPauseCanvas.sortingOrder = 0;
+                       // dialogsCanvas.sortingOrder = 1;
+                        //menuPauseCanvas.sortingOrder = 0;
                     }
                     break;
             default:

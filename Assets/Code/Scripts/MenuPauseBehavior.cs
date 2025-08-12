@@ -43,11 +43,11 @@ public class MenuPauseBehavior : MonoBehaviour
     {
         Time.timeScale = 1;
         
-        menuPauseCanvas.sortingOrder = 0;
-        dialogsCanvas.sortingOrder = 1;
+        //menuPauseCanvas.sortingOrder = 0;
+        //dialogsCanvas.sortingOrder = 1;
         DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
         DisplayCreditsStatic.DisplayCredits = false;
         animator.SetTrigger("FadeOut");
-        //canvas.SetActive(false);
+        canvas.SetActive(false);
     }
 }
