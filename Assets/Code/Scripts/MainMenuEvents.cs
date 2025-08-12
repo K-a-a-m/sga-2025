@@ -7,10 +7,12 @@ public class MainMenuEvents : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private GameObject panelStartButtons;
     [SerializeField] private GameObject panelCredits;
-    
+    [SerializeField] private Animator animator;
     public void StartGame(int sceneNumber)
     {
-        SceneManager.LoadScene("PlayerScene");
+        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.PlayerScene);
+        animator.SetTrigger("FadeOut");
+        //SceneManager.LoadScene("PlayerScene");
     }
 
     public void ShowCredits()
@@ -34,6 +36,9 @@ public class MainMenuEvents : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("TitleScreen");
+        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        animator.SetTrigger("FadeOut");
+        //SceneManager.LoadScene("TitleScreen");
+        
     }
 }

@@ -22,6 +22,7 @@ public class DialogManagerEnd : MonoBehaviour
     [SerializeField] private float revealDuration = 3.2f;
     [SerializeField] private Color32 colorGreen;
     [SerializeField] private Color colorYellow = new Color(0.8f , 0.7490196f , 0.3921569f, 1f); //= new Color(204,191,100);
+    [SerializeField] private Animator animator;
     int dialogIndex = 0;
     public int currentDialog = 1;
     
@@ -109,8 +110,11 @@ public class DialogManagerEnd : MonoBehaviour
 
     public void OnClickBackButton()
     {
+        
         DisplayCreditsStatic.DisplayCredits = true;
-        SceneManager.LoadScene("TitleScreen");
+        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        animator.SetTrigger("FadeOut");
+        canvasBack.SetActive(false);
     }
 
     IEnumerator RevealBackground()
