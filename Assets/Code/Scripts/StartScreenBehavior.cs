@@ -6,6 +6,7 @@ public class StartScreenBehavior : MonoBehaviour
 
     
     [SerializeField] private MainMenuEvents _mainMenuEvents;
+    
     void Start()
     {
         if (DisplayCreditsStatic.DisplayCredits)

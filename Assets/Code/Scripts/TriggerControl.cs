@@ -15,7 +15,7 @@ public class TriggerControl : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D colliderTrigger)
     {
-        if (colliderTrigger.tag == "Player")
+       /* if (colliderTrigger.tag == "Player")
         {
             if (characterController.stateCameraRotation == 1)
             {
@@ -26,9 +26,21 @@ public class TriggerControl : MonoBehaviour
                 characterController.stateCameraRotation = 6;
             }
             gameObject.SetActive(!disabledAfterTrigger);
+        } */
+        
+        if (colliderTrigger.tag == "Player")
+        {
+            if (CameraRotation.stateCameraRotation == 1)
+            {
+                CameraRotation.stateCameraRotation = 5;
+            }
+            else if (CameraRotation.stateCameraRotation == 3)
+            {
+                CameraRotation.stateCameraRotation = 6;
+            }
+            gameObject.SetActive(!disabledAfterTrigger);
         }
 
     }
 }
 
-//gameobject = 

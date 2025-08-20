@@ -33,7 +33,8 @@ public class LevelRotation : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(characterController.stateCameraRotation == 1)//Niveau a l'endroit
+        
+        if(CameraRotation.stateCameraRotation== 1)//Niveau a l'endroit
         {
             characterRigidbody.gravityScale = GravityScale;
             playerController.transform.eulerAngles = new Vector3(0,0,0);
@@ -41,7 +42,7 @@ public class LevelRotation : MonoBehaviour
             startTransitionUP = true;
 
         }
-        else if(characterController.stateCameraRotation == 2)//rotation caméra vers l'envers
+        else if(CameraRotation.stateCameraRotation== 2)//rotation caméra vers l'envers
         {
             if (!audioSource.isPlaying)
             {
@@ -66,10 +67,10 @@ public class LevelRotation : MonoBehaviour
             }
             else
             {
-                characterController.stateCameraRotation = 3;
+                CameraRotation.stateCameraRotation= 3;
             }
         }
-        else if (characterController.stateCameraRotation == 3)//niveau retorun�
+        else if (CameraRotation.stateCameraRotation== 3)//niveau retorun�
         {
 
             characterRigidbody.gravityScale = -GravityScale;
@@ -77,7 +78,7 @@ public class LevelRotation : MonoBehaviour
             //cameraController.transform.eulerAngles = new Vector3(0, 0, 180f);
             startTransitionDOWN = true;
         }
-        else if (characterController.stateCameraRotation == 4)//Rotation cam vers l'endroit
+        else if (CameraRotation.stateCameraRotation== 4)//Rotation cam vers l'endroit
         {
             if (!audioSource.isPlaying)
             {
@@ -100,12 +101,12 @@ public class LevelRotation : MonoBehaviour
             }
             else
             {
-                characterController.stateCameraRotation = 1;
+                CameraRotation.stateCameraRotation= 1;
             }
            
 
         }
-        else if (characterController.stateCameraRotation == 5)//Tremblement cam�ra/�cran quand c'est up
+        else if (CameraRotation.stateCameraRotation== 5)//Tremblement cam�ra/�cran quand c'est up
         {
             if (!audioSource.isPlaying)
             {
@@ -128,12 +129,12 @@ public class LevelRotation : MonoBehaviour
                 startTransitionUP = true;
                 if (willRotate)
                 {
-                    characterController.stateCameraRotation = 2;
+                    CameraRotation.stateCameraRotation= 2;
                     
                 }
                 else
                 {
-                    characterController.stateCameraRotation = 1;
+                    CameraRotation.stateCameraRotation= 1;
                     willRotate = true; 
                     characterController.nbJumpsLeft = 2;
 
@@ -141,7 +142,7 @@ public class LevelRotation : MonoBehaviour
             }
 
         }
-        else if (characterController.stateCameraRotation == 6)//Tremblement cam�ra/�cran quand c'est down
+        else if (CameraRotation.stateCameraRotation== 6)//Tremblement cam�ra/�cran quand c'est down
         {
             if (!audioSource.isPlaying)
             {
@@ -163,7 +164,7 @@ public class LevelRotation : MonoBehaviour
             else
             {
                 startTransitionDOWN = true;
-                characterController.stateCameraRotation = 4;
+                CameraRotation.stateCameraRotation= 4;
             }
 
         }

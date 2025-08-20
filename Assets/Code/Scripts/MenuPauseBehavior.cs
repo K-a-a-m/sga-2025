@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class MenuPauseBehavior : MonoBehaviour
@@ -11,6 +12,7 @@ public class MenuPauseBehavior : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] private Canvas menuPauseCanvas;
     [SerializeField] private Canvas dialogsCanvas;
+    [SerializeField] private GameObject firstButtonSelected;
     private bool isActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +21,7 @@ public class MenuPauseBehavior : MonoBehaviour
         isActive = false;
         canvas.SetActive(false);
         Time.timeScale = 1;
+        
     }
 
     // Update is called once per frame
@@ -33,9 +36,11 @@ public class MenuPauseBehavior : MonoBehaviour
 
     public void BackMenu()
     {
+        
         isActive = !isActive;
         canvas.SetActive(isActive);
         player.GetComponent<CharacterController0_1>().enabled = !isActive;
+        EventSystem.current.SetSelectedGameObject(isActive ? firstButtonSelected : null);
         Time.timeScale = isActive ? 0 : 1;
     }
 

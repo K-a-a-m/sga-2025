@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogManagerEnd : MonoBehaviour
 {
@@ -17,12 +18,14 @@ public class DialogManagerEnd : MonoBehaviour
     [SerializeField] TextMeshProUGUI speakerText;
     [SerializeField] private GameObject butterflies;
     [SerializeField] private GameObject canvasBack;
+   [SerializeField] private GameObject creditButton;
     [SerializeField] private List<Animator> bgAnimators;
     [SerializeField] private int indexReveal = 2;
     [SerializeField] private float revealDuration = 3.2f;
     [SerializeField] private Color32 colorGreen;
     [SerializeField] private Color colorYellow = new Color(0.8f , 0.7490196f , 0.3921569f, 1f); //= new Color(204,191,100);
     [SerializeField] private Animator animator;
+    
     int dialogIndex = 0;
     public int currentDialog = 1;
     
@@ -93,6 +96,7 @@ public class DialogManagerEnd : MonoBehaviour
                         currentDialog++;
                         butterflies.SetActive(true);
                         canvasBack.SetActive(true);
+                        EventSystem.current.SetSelectedGameObject(creditButton);
                         
                     }
                     break;

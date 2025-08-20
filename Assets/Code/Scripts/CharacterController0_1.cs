@@ -22,10 +22,12 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private AudioClip OrbeSFX;
     [SerializeField] private AudioClip MarcheSFX;
     [SerializeField] private PhysicsMaterial2D playerMaterial;
+
+    //[SerializeField] private CameraRotation cameraRotation; 
     // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
     public GameObject sceneBackground;
-    public int stateCameraRotation = 1;
+    
     public int orbesNumber = 0;
     private Vector3 respawnPos;
     private int respawnState;
@@ -66,7 +68,7 @@ public class CharacterController0_1 : MonoBehaviour
         bounderyDownCollider = bounderyDown.GetComponent<Collider2D>();
         respawnPos = this.transform.position;
         respawnRot = this.transform.rotation;
-        respawnState = stateCameraRotation;
+        respawnState = CameraRotation.stateCameraRotation;//stateCameraRotation;
         audioSource = GetComponent<AudioSource>();
         controllers = GameObject.FindObjectsByType<TriggerControl>(FindObjectsSortMode.None);
         isGrounded = true;
@@ -84,7 +86,8 @@ public class CharacterController0_1 : MonoBehaviour
             this.transform.position = respawnPos;
             this.transform.rotation = respawnRot;
             rb.linearVelocityY = 0f;
-            stateCameraRotation = respawnState;
+            //stateCameraRotation = respawnState;
+            CameraRotation.stateCameraRotation = respawnState;
             foreach (TriggerControl control in controllers)
             {
                 control.gameObject.SetActive(true);
@@ -110,14 +113,16 @@ public class CharacterController0_1 : MonoBehaviour
             playerMaterial.friction = 0f;
         }
        // Debug.Log("stateCameraRotation : " + stateCameraRotation);
-        if (stateCameraRotation == 3)
+        //if (stateCameraRotation == 3)
+        if (CameraRotation.stateCameraRotation == 3)
         {
             MoveCharacter(-1);
             JumpCharacter(-1);
             //spriteRenderer.flipX = rb.linearVelocityX > -0.1;
 
         }
-        else if (stateCameraRotation == 1)
+        //else if (stateCameraRotation == 1)
+        else if (CameraRotation.stateCameraRotation == 1)
         {
             MoveCharacter(1);
             JumpCharacter(1);
@@ -135,7 +140,7 @@ public class CharacterController0_1 : MonoBehaviour
             checkPoint = false;
             respawnPos = this.transform.position;
             respawnRot = this.transform.rotation;
-            respawnState = stateCameraRotation;
+            respawnState = CameraRotation.stateCameraRotation; //stateCameraRotation;
         }
 
 

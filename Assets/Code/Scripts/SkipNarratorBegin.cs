@@ -10,12 +10,18 @@ public class SkipNarratorBegin : MonoBehaviour
     private InputAction nextDialog;
     void Start()
     {
-        nextDialog = InputSystem.actions.FindAction("NextDialog");
+        nextDialog = InputSystem.actions.FindAction("SkipDialog");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Time.timeScale == 0)
+            _audioSourceNarrator.Pause();
+        else
+        {
+            _audioSourceNarrator.UnPause();
+        }
         if (nextDialog.WasPressedThisFrame())
         {
             panelNarrator.SetActive(false);

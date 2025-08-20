@@ -16,9 +16,8 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private Canvas dialogsCanvas;
     int dialogIndex = 0;
     public int currentDialog = 1;
+    public bool CanContinueDialogs { get; set; } = false;
 
-
-        
 
     List<Tuple<string, string>> dialogWesh = new List<Tuple<string, string>>()
     {
@@ -42,7 +41,7 @@ public class DialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nextDialog.WasPressedThisFrame())
+        if(nextDialog.WasPressedThisFrame() && CanContinueDialogs)
         {
             string speaker = "";
             dialogContainerPanel.SetActive(true);
@@ -57,12 +56,14 @@ public class DialogManager : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log(currentDialog);
                         dialogContainerPanel.SetActive(false);
                         dialogIndex = 0;
                         currentDialog = -1;
                         keysCharacterMove.SetActive(true);
                         palette.SetActive(true);
                         characterController.enabled = true;
+                        
                        // dialogsCanvas.sortingOrder = 1;
                         //menuPauseCanvas.sortingOrder = 0;
                     }
