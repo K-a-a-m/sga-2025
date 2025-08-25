@@ -21,13 +21,14 @@ public class GameManager : MonoBehaviour
     public bool IsBrushTaken { get; set; } = false;
     [SerializeField] private int remainingSeconds = 180;
     public static GameManager Instance {get; private set; }
-
+    private CharacterController0_1  _characterController;
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             secondElapsedTMP = secondElapsedText.GetComponent<TextMeshProUGUI>();
+            _characterController = player.GetComponent<CharacterController0_1>();
         }
         else
         {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
        
+      
         UpdateElapsedTimeText();
     }
 
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over");
         Time.timeScale = 0;
         canvasGameOver.SetActive(true);
+        _characterController.enabled = false;
        // 
     }
     
@@ -68,6 +71,8 @@ public class GameManager : MonoBehaviour
     {
         while (!IsGameOver && !IsBrushTaken)
         {
+            if (!_characterController.enabled)
+                _characterController.enabled = true;
             yield return new WaitForSeconds(1f);
             remainingSeconds--;
             UpdateElapsedTimeText();

@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
@@ -10,9 +11,18 @@ public class MainMenuEvents : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject defaultMainMenuButton;
     [SerializeField] private GameObject defaultCreditsButton;
+    [SerializeField] private GameObject levelHardToggle;
+    public void Start()
+    {
+        if (SceneParametersStatic.SceneName == nameof(AvailableScenes.TitleScreen))
+        {
+            SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
+        }
+    }
+
     public void StartGame()
     {
-        SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
+        //SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
         animator.SetTrigger("FadeOut");
         //SceneManager.LoadScene("PlayerScene");
     }
@@ -44,5 +54,22 @@ public class MainMenuEvents : MonoBehaviour
         animator.SetTrigger("FadeOut");
         //SceneManager.LoadScene("TitleScreen");
         
+    }
+
+    public void ChangePlayerScene()
+    {
+        if (SceneParametersStatic.SceneName == nameof(AvailableScenes.PlayerScene))
+        {
+            SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerSceneExpert);
+        }
+        else if (SceneParametersStatic.SceneName == nameof(AvailableScenes.PlayerSceneExpert))
+        {
+            SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
+        }
+    }
+
+    public void ShowLevelHardToggle()
+    {
+        levelHardToggle.SetActive(!levelHardToggle.activeSelf);
     }
 }

@@ -46,8 +46,11 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.UpdateElapsedTimeText();
+           
             dialogContainerPanel.SetActive(true);
+            if (!GameManager.Instance)
+                return;
+            GameManager.Instance.UpdateElapsedTimeText();
            
         }
     }
@@ -99,7 +102,8 @@ public class DialogManager : MonoBehaviour
         keysCharacterMove.SetActive(true);
         palette.SetActive(true);
         characterController.enabled = true;
-        
+        if (!GameManager.Instance)
+            return;
         StartCoroutine(GameManager.Instance.StartElapsedTime());
     }
 }

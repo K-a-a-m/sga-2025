@@ -3690,7 +3690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &317390204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5285,10 +5285,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondElapsedText: {fileID: 1301062546}
-  alertRemainingSeconds: 20
+  alertRemainingSeconds: 30
   canvasGameOver: {fileID: 317390203}
   player: {fileID: 394995853}
-  remainingSeconds: 25
+  remainingSeconds: 180
 --- !u!4 &718730557
 Transform:
   m_ObjectHideFlags: 0
@@ -6467,7 +6467,7 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Cya
+      value: Orbe Cyan
       objectReference: {fileID: 0}
     - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Resource
@@ -8003,8 +8003,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292598747
+  m_fontColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8027,7 +8027,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

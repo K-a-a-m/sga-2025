@@ -94,6 +94,12 @@ public class DialogManagerEnd : MonoBehaviour
                         dialogContainerPanel.SetActive(false);
                         dialogIndex = 0;
                         currentDialog++;
+                         Vector3 amount = new Vector3(.2f, .2f, .2f);
+                        iTween.PunchScale(creditButton, iTween.Hash(
+                        "amount", amount,
+                        "time", 2f,
+                        "looptype", iTween.LoopType.loop
+                        ));
                         butterflies.SetActive(true);
                         canvasBack.SetActive(true);
                         EventSystem.current.SetSelectedGameObject(creditButton);

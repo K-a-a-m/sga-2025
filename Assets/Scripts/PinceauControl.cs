@@ -24,7 +24,8 @@ public class PinceauControl : MonoBehaviour
     {
         if (colliderTrigger.tag == "Player" && hasDetect)
         {
-            GameManager.Instance.IsBrushTaken = true;
+            if(GameManager.Instance)
+                GameManager.Instance.IsBrushTaken = true;
             EnterFadeOut();
             hasDetect = false;
             dialogManager.currentDialog = 2;
