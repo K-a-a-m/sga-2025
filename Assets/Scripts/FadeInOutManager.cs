@@ -6,6 +6,7 @@ public class FadeInOutManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnFadeOutComplete()
     {
-        SceneManager.LoadScene(DisplayCreditsStatic.SceneName);
+        Debug.Log("FADING OUT");
+        SceneManager.LoadScene(SceneParametersStatic.SceneName);
     }
 }

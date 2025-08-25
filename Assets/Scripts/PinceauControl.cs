@@ -24,6 +24,7 @@ public class PinceauControl : MonoBehaviour
     {
         if (colliderTrigger.tag == "Player" && hasDetect)
         {
+            GameManager.Instance.IsBrushTaken = true;
             EnterFadeOut();
             hasDetect = false;
             dialogManager.currentDialog = 2;
@@ -34,7 +35,7 @@ public class PinceauControl : MonoBehaviour
     private void EnterFadeOut()
     {
         
-        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.FinalScreenLayered);
+        SceneParametersStatic.SceneName = nameof(AvailableScenes.FinalScreenLayered);
         animator.SetTrigger("FadeOut");
        // StartCoroutine(OnFadeOutComplete());
     }

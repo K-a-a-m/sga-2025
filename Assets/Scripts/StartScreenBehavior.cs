@@ -9,7 +9,7 @@ public class StartScreenBehavior : MonoBehaviour
     
     void Start()
     {
-        if (DisplayCreditsStatic.DisplayCredits)
+        if (SceneParametersStatic.DisplayCredits)
         {
             _mainMenuEvents.ShowCredits();
         }

@@ -15,7 +15,7 @@ public class CanvasBehavior : MonoBehaviour
     void Start()
     {
         Time.fixedDeltaTime = 0.05f;
-        characterController.enabled = false;
+        characterController.enabled = false; // SET BACK TO FALSE
     }
 
 

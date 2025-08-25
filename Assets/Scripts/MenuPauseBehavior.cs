@@ -10,7 +10,7 @@ public class MenuPauseBehavior : MonoBehaviour
     [SerializeField] GameObject canvas;
     [SerializeField] GameObject player;
     [SerializeField] Animator animator;
-    [SerializeField] private Canvas menuPauseCanvas;
+   // [SerializeField] private Canvas menuPauseCanvas;
     [SerializeField] private Canvas dialogsCanvas;
     [SerializeField] private GameObject firstButtonSelected;
     private bool isActive = false;
@@ -21,6 +21,7 @@ public class MenuPauseBehavior : MonoBehaviour
         isActive = false;
         canvas.SetActive(false);
         Time.timeScale = 1;
+        
         
     }
 
@@ -41,6 +42,7 @@ public class MenuPauseBehavior : MonoBehaviour
         canvas.SetActive(isActive);
         player.GetComponent<CharacterController0_1>().enabled = !isActive;
         EventSystem.current.SetSelectedGameObject(isActive ? firstButtonSelected : null);
+        
         Time.timeScale = isActive ? 0 : 1;
     }
 
@@ -50,8 +52,8 @@ public class MenuPauseBehavior : MonoBehaviour
         
         //menuPauseCanvas.sortingOrder = 0;
         //dialogsCanvas.sortingOrder = 1;
-        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
-        DisplayCreditsStatic.DisplayCredits = false;
+        SceneParametersStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        SceneParametersStatic.DisplayCredits = false;
         animator.SetTrigger("FadeOut");
         canvas.SetActive(false);
     }

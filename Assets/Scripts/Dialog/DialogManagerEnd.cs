@@ -115,8 +115,8 @@ public class DialogManagerEnd : MonoBehaviour
     public void OnClickBackButton()
     {
         
-        DisplayCreditsStatic.DisplayCredits = true;
-        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        SceneParametersStatic.DisplayCredits = true;
+        SceneParametersStatic.SceneName = nameof(AvailableScenes.TitleScreen);
         animator.SetTrigger("FadeOut");
         canvasBack.SetActive(false);
     }

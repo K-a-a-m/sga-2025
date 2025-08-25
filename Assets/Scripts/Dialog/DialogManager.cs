@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,13 +11,16 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogTextEnd;
     [SerializeField] GameObject dialogContainerPanel;
     [SerializeField] TextMeshProUGUI speakerText;
+   
     [SerializeField] CharacterController0_1 characterController;
     [SerializeField] private GameObject keysCharacterMove;
     [SerializeField] private GameObject palette;
     [SerializeField] private Canvas menuPauseCanvas;
     [SerializeField] private Canvas dialogsCanvas;
+
     int dialogIndex = 0;
     public int currentDialog = 1;
+    
     public bool CanContinueDialogs { get; set; } = false;
 
 
@@ -34,13 +39,23 @@ public class DialogManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        dialogContainerPanel.SetActive(true);
         nextDialog = InputSystem.actions.FindAction("NextDialog");
+        if (SceneParametersStatic.AutoSkipDialogsBegin)
+        {
+            InitializeGame();
+        }
+        else
+        {
+            GameManager.Instance.UpdateElapsedTimeText();
+            dialogContainerPanel.SetActive(true);
+           
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if(nextDialog.WasPressedThisFrame() && CanContinueDialogs)
         {
             string speaker = "";
@@ -57,14 +72,8 @@ public class DialogManager : MonoBehaviour
                     else
                     {
                         Debug.Log(currentDialog);
-                        dialogContainerPanel.SetActive(false);
-                        dialogIndex = 0;
-                        currentDialog = -1;
-                        keysCharacterMove.SetActive(true);
-                        palette.SetActive(true);
-                        characterController.enabled = true;
-                        
-                       // dialogsCanvas.sortingOrder = 1;
+                        InitializeGame();
+                        // dialogsCanvas.sortingOrder = 1;
                         //menuPauseCanvas.sortingOrder = 0;
                     }
                     break;
@@ -78,5 +87,19 @@ public class DialogManager : MonoBehaviour
             }   
             speakerText.text = speaker;
         }
+
+       
+    }
+
+    private void InitializeGame()
+    {
+        dialogContainerPanel.SetActive(false);
+        dialogIndex = 0;
+        currentDialog = -1;
+        keysCharacterMove.SetActive(true);
+        palette.SetActive(true);
+        characterController.enabled = true;
+        
+        StartCoroutine(GameManager.Instance.StartElapsedTime());
     }
 }

@@ -23,6 +23,7 @@ public class CharacterController0_1 : MonoBehaviour
     [SerializeField] private AudioClip MarcheSFX;
     [SerializeField] private PhysicsMaterial2D playerMaterial;
 
+    [SerializeField] private float friction = .4f;
     //[SerializeField] private CameraRotation cameraRotation; 
     // private float horizontal = -Input.GetAxisRaw("Horizontal"); // Inverse gauche/droite
 
@@ -72,6 +73,7 @@ public class CharacterController0_1 : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         controllers = GameObject.FindObjectsByType<TriggerControl>(FindObjectsSortMode.None);
         isGrounded = true;
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -106,11 +108,11 @@ public class CharacterController0_1 : MonoBehaviour
         charachterAnimator.SetBool(name: "isGrounded", isGrounded);
         if (isGrounded)
         {
-            playerMaterial.friction = .2f;
+            playerMaterial.friction = friction;
         }
         else
         {
-            playerMaterial.friction = 0f;
+            playerMaterial.friction = friction;
         }
        // Debug.Log("stateCameraRotation : " + stateCameraRotation);
         //if (stateCameraRotation == 3)

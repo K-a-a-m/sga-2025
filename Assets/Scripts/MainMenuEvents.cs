@@ -10,9 +10,9 @@ public class MainMenuEvents : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject defaultMainMenuButton;
     [SerializeField] private GameObject defaultCreditsButton;
-    public void StartGame(int sceneNumber)
+    public void StartGame()
     {
-        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.PlayerScene);
+        SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
         animator.SetTrigger("FadeOut");
         //SceneManager.LoadScene("PlayerScene");
     }
@@ -22,7 +22,7 @@ public class MainMenuEvents : MonoBehaviour
         panelStartButtons.SetActive(false);
         panelCredits.SetActive(true);
         EventSystem.current.SetSelectedGameObject(defaultCreditsButton);
-        DisplayCreditsStatic.DisplayCredits = true;
+        SceneParametersStatic.DisplayCredits = true;
     }
 
     public void ShowMainMenuPanel()
@@ -30,7 +30,7 @@ public class MainMenuEvents : MonoBehaviour
         panelCredits.SetActive(false);
         panelStartButtons.SetActive(true);
         EventSystem.current.SetSelectedGameObject(defaultMainMenuButton);
-        DisplayCreditsStatic.DisplayCredits = false;
+        SceneParametersStatic.DisplayCredits = false;
     }
 
     public void QuitGame()
@@ -40,7 +40,7 @@ public class MainMenuEvents : MonoBehaviour
 
     public void MainMenu()
     {
-        DisplayCreditsStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        SceneParametersStatic.SceneName = nameof(AvailableScenes.TitleScreen);
         animator.SetTrigger("FadeOut");
         //SceneManager.LoadScene("TitleScreen");
         
