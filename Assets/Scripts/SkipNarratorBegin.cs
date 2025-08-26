@@ -14,8 +14,13 @@ public class SkipNarratorBegin : MonoBehaviour
         if (SceneParametersStatic.AutoSkipDialogsBegin)
         {
             panelNarrator.SetActive(false);
-            _audioSourceNarrator.Stop();
+           // _audioSourceNarrator.Stop();
+            CameraRotation.stateCameraRotation = 1;
             shakeFirstCanvas.waitForeShake = 1;
+        }
+        else
+        {
+            _audioSourceNarrator.Play();
         }
     }
 

@@ -28,6 +28,7 @@ public class LevelRotation : MonoBehaviour
         characterRigidbody = playerController.GetComponent<Rigidbody2D>();
         rotationStep = 180f / (animationDuration / 50f);
         audioSource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
