@@ -18,7 +18,7 @@ public class OrbesControl : MonoBehaviour
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
     private bool hasDetect = true;
-    
+    private bool secondsAdded = false;
     private void Start()
     {
         characterController = playerController.GetComponent<CharacterController0_1>();
@@ -38,6 +38,8 @@ public class OrbesControl : MonoBehaviour
             characterController.checkPoint = true;
             if (!hasDetect) return;
             hasDetect = false;
+           
+               
             characterController.orbesNumber++;
 
             orbParent.ChangeAudioClip();
@@ -53,6 +55,14 @@ public class OrbesControl : MonoBehaviour
             {
                 ltb.ResetTriggers();
             }
+            if(!GameManager.Instance)
+                return;
+            if (!secondsAdded)
+            {
+                GameManager.Instance.AddSeconds();
+                secondsAdded = true;
+            }
+            
             //orbParentGO.SetActive(false);
             //StartCoroutine(DisableOrbParent());
         }

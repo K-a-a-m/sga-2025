@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameOverScreenManager : MonoBehaviour
@@ -15,6 +17,10 @@ public class GameOverScreenManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+            EventSystem.current.SetSelectedGameObject(gameObject.activeSelf ? firstButtonSelected : null);
+    }
     public void LoadTitleScreen()
     {
         Time.timeScale = 1;

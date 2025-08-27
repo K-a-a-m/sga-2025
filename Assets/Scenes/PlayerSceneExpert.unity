@@ -5289,6 +5289,7 @@ MonoBehaviour:
   canvasGameOver: {fileID: 317390203}
   player: {fileID: 394995853}
   remainingSeconds: 201
+  additionalSeconds: 0
 --- !u!4 &718730557
 Transform:
   m_ObjectHideFlags: 0
@@ -6205,7 +6206,7 @@ PrefabInstance:
       objectReference: {fileID: 394995853}
     - target: {fileID: 6696976221584862421, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Name
-      value: Orbe Jau
+      value: Orbe Jaune
       objectReference: {fileID: 0}
     - target: {fileID: 7039600776054321845, guid: 7ba1f13f1910ffa4caa8aeee7ab4f4fe, type: 3}
       propertyPath: m_Resource

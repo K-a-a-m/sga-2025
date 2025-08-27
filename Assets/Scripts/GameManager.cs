@@ -20,8 +20,10 @@ public class GameManager : MonoBehaviour
     private bool gameOverInitiated = false;
     public bool IsBrushTaken { get; set; } = false;
     [SerializeField] private int remainingSeconds = 180;
+    [SerializeField] private int additionalSeconds = 5;
     public static GameManager Instance {get; private set; }
     private CharacterController0_1  _characterController;
+    private bool needAddSeconds = false;
     void Awake()
     {
         if (Instance == null)
@@ -75,6 +77,11 @@ public class GameManager : MonoBehaviour
                 _characterController.enabled = true;
             yield return new WaitForSeconds(1f);
             remainingSeconds--;
+            if (needAddSeconds)
+            {
+                remainingSeconds +=  additionalSeconds;
+                needAddSeconds = false;
+            }
             UpdateElapsedTimeText();
             if (remainingSeconds <= 0)
             {
@@ -117,5 +124,10 @@ public class GameManager : MonoBehaviour
             "looptype", iTween.LoopType.loop
         ));
         animationStarted = true;
+    }
+
+    public void AddSeconds()
+    {
+        needAddSeconds = true;
     }
 }
