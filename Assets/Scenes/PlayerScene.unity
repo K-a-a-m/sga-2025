@@ -6447,6 +6447,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -7120,6 +7124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
@@ -7903,6 +7911,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -8153,6 +8165,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
@@ -10401,6 +10417,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -11116,6 +11136,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -11809,6 +11833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
@@ -12743,6 +12771,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -13063,6 +13095,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 394995853}
@@ -13288,7 +13324,6 @@ MonoBehaviour:
   canvas: {fileID: 1420003295}
   player: {fileID: 394995853}
   animator: {fileID: 2004931329}
-  menuPauseCanvas: {fileID: 1420003298}
   dialogsCanvas: {fileID: 1229849104}
   firstButtonSelected: {fileID: 484242489}
 --- !u!4 &2043896952
@@ -13562,6 +13597,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 394995853}
     - target: {fileID: 6489043763769470589, guid: 51a340c2cbf75654ab46ba039fcb9273, type: 3}
       propertyPath: playerController
       value: 

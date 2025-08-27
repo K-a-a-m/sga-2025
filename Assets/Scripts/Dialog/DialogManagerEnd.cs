@@ -123,6 +123,7 @@ public class DialogManagerEnd : MonoBehaviour
         
         SceneParametersStatic.DisplayCredits = true;
         SceneParametersStatic.SceneName = nameof(AvailableScenes.TitleScreen);
+        SceneParametersStatic.ShowLevelHardOption =  true;
         animator.SetTrigger("FadeOut");
         canvasBack.SetActive(false);
     }

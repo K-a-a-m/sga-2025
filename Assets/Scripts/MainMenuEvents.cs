@@ -18,6 +18,7 @@ public class MainMenuEvents : MonoBehaviour
         {
             SceneParametersStatic.SceneName = nameof(AvailableScenes.PlayerScene);
         }
+        levelHardToggle.SetActive(SceneParametersStatic.ShowLevelHardOption); 
     }
 
     public void StartGame()

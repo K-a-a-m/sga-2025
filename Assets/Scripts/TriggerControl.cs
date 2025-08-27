@@ -1,14 +1,17 @@
+using System.Collections;
 using UnityEngine;
 
 public class TriggerControl : MonoBehaviour
 {
-    [SerializeField] private GameObject playerController;
+    [SerializeField] private GameObject player;
+    private Rigidbody2D playerRB;
     private Collider2D colliderTrigger;
     private CharacterController0_1 characterController;
     [SerializeField] private bool disabledAfterTrigger = true;
     private void Start()
     {
-        characterController = playerController.GetComponent<CharacterController0_1>();
+        playerRB = player.GetComponent<Rigidbody2D>();
+        characterController = player.GetComponent<CharacterController0_1>();
         colliderTrigger = GetComponent<Collider2D>();
         GetComponent<Renderer>().enabled = false;
 
@@ -30,6 +33,7 @@ public class TriggerControl : MonoBehaviour
         
         if (colliderTrigger.tag == "Player")
         {
+            characterController.enabled = false;
             if (CameraRotation.stateCameraRotation == 1)
             {
                 CameraRotation.stateCameraRotation = 5;
@@ -39,6 +43,7 @@ public class TriggerControl : MonoBehaviour
                 CameraRotation.stateCameraRotation = 6;
             }
             gameObject.SetActive(!disabledAfterTrigger);
+            
         }
 
     }

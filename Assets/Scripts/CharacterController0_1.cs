@@ -77,6 +77,7 @@ public class CharacterController0_1 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if((groundLayer.value & (1 << other.gameObject.layer)) !=0)
         {
             nbJumpsLeft = 2;

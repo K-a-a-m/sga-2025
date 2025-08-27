@@ -8,6 +8,8 @@ public static class SceneParametersStatic
     public static string SceneName { get; set; } = nameof(AvailableScenes.PlayerScene);
 
     public static bool AutoSkipDialogsBegin { get; set; } = false;
+    
+    public static bool ShowLevelHardOption { get; set; } = false;
 }
 
 public enum AvailableScenes

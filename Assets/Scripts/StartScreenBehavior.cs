@@ -19,6 +19,8 @@ public class StartScreenBehavior : MonoBehaviour
         {
             _mainMenuEvents.ShowMainMenuPanel();
         }
+
+        
     }
 
 }
