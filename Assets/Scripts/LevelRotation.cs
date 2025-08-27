@@ -45,6 +45,8 @@ public class LevelRotation : MonoBehaviour
         }
         else if(CameraRotation.stateCameraRotation== 2)//rotation caméra vers l'envers
         {
+            if (!audioSource)
+                return;
             if (!audioSource.isPlaying)
             {
                 audioSource.PlayOneShot(RotationSFX);

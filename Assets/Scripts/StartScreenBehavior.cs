@@ -9,6 +9,8 @@ public class StartScreenBehavior : MonoBehaviour
     
     void Start()
     {
+        CameraRotation.stateCameraRotation = 1;
+        SceneParametersStatic.AutoSkipDialogsBegin =  false;
         if (SceneParametersStatic.DisplayCredits)
         {
             _mainMenuEvents.ShowCredits();
