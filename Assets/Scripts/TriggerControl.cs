@@ -33,7 +33,7 @@ public class TriggerControl : MonoBehaviour
         
         if (colliderTrigger.tag == "Player")
         {
-            characterController.enabled = false;
+            //characterController.enabled = false;
             if (CameraRotation.stateCameraRotation == 1)
             {
                 CameraRotation.stateCameraRotation = 5;

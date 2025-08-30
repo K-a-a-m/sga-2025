@@ -74,7 +74,6 @@ public class DialogManager : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log(currentDialog);
                         InitializeGame();
                         // dialogsCanvas.sortingOrder = 1;
                         //menuPauseCanvas.sortingOrder = 0;

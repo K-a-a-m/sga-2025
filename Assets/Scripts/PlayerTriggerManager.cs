@@ -9,8 +9,8 @@ public class PlayerTriggerManager : MonoBehaviour
     {
         if (other.CompareTag("Trigger"))
         {
-            playerRB.linearVelocityY = 0f;
-            playerRB.linearVelocityX = 0f;
+                playerRB.linearVelocityY = 0f;
+                playerRB.linearVelocityX = 0f;
         }
     }
     // Update is called once per frame
